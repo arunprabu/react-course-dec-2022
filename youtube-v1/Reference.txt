@@ -1,0 +1,143 @@
+
+Timing: 9.30 AM to 6.30 PM 
+---
+
+Hands-on 
+---
+  Explain => Coding => Demo => Try it out => (Todos) => (Review) 
+
+  Let's make it work => Let's make it better 
+
+Topics
+---
+  3 Weeks 
+  ---
+    HTML, CSS,  (Project #1)
+    JS, ES2015  (Project #2)
+    TypeScript  
+
+
+  4-Weeks
+  ---
+    React JS (Project #3)
+    Redux (Project #4)
+
+---
+
+
+Softwares Required
+---
+  * Node JS v 14+ (even version) . 
+  * Visual Studio Code Editor
+  * Browser ( Chrome / Edge / Firefox / Safari / Opera / Brave )
+  * Postman
+
+---
+
+Web Development
+---
+  1. Front End Development
+      HTML, CSS, JS and Many JS libraries and Frameworks
+
+        Client Tool
+        --
+          Browser 
+          Postman / Advanced REST Client
+          
+
+  2. Back End Development 
+      Java/.Net/Perl/Python/Ruby/PHP/NodeJS + Databases (MySQL/Oracle/PostgreSQL/MongoDB/MariaDB)
+
+        Toolsets
+        ---
+          Java (file1.java) => (JAVAC) => bytecode (intermediate code) => ( JRE ) => Machine Language 
+
+          Servers: 
+            1. Web Servers
+                Tomcat
+                  Response: HTML, CSS, JS (Traditional Back End / SSR Apps)
+                  Response: XML (SOAP Api)
+                  Response: JSON (Modern Back End / RESTful API)
+
+            2. Application Servers 
+                JBoss (Java)
+                Weblogic (Java)
+                IBM Websphere (Java)
+                Apache (PHP)
+                IIS (DotNet)
+
+
+Browser
+---
+  will have 
+  1. HTML Renderer (html)
+  2. CSS Parser (css)
+  3. JS Engine (js)
+
+  a.k.a Browser Core 
+
+Browser Family
+---
+  Netscape Navigator (gone)
+  Microsoft Internet Explorer (gone)
+  Opera (closed source - gone)
+
+  Apple Safari (Webkit Core Opensourced)
+  Mozilla Firefox (Mozilla Core Opensourced)
+  Google Chrome ( Opensourced Chromium Core = Webkit + Mozilla + JS Engine )
+  Opera Browser ( developed out of Chromium Core )
+  Edge Browser ( developed out of Chromium Core )
+  Brave Browser ( developed out of Chromium Core )
+
+---
+
+
+Website 
+-------
+  HTML
+  --- 
+    * Structural Layer
+
+    Layouts 
+    --
+      1. Fixed Layouts 
+      2. Fluid Layouts
+
+    HTML Elements 
+    --
+      1. Block Elements 
+      2. Inline Elements
+
+  CSS 
+  --
+    * Presentation Layer 
+  
+  JS 
+  --
+    * Interaction Layer 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Webapps 
+--
+
