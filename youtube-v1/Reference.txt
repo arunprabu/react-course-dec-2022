@@ -117,6 +117,59 @@ Website
     * Interaction Layer 
 
 
+Naming Conventions
+---
+
+Casing Types 
+==========
+  1. PascalCase 
+      * recommended for Object Oriented Program's (Java, JS & TS) classes 
+      * also recommended for Interface in Java & TypeScript 
+
+      examples:
+        class CarDetails{
+
+        }
+
+        interface Employee{
+
+        }
+
+  2. camelCase
+      * recommended for variables, const, functions, methods in JS & TS 
+      * recommended for id's of html elements 
+
+      examples: 
+        var myCar = 'BMW'; 
+        function getCarInfo() {
+          // .... 
+        }
+
+  3. kebab-case 
+      * recommended for css classes 
+      * recommended for urls 
+      * recommended for file names, folder names, assets in front end       projects 
+      * okay for id's of html elements if your architect accepts
+
+      Examples:
+      --
+        btn-primary 
+        slideshow-container 
+        youtube-logo.png 
+
+  4. snake_case 
+      * never ever use this.
+      * okay for const in JS & TS if architect accepts 
+
+      example:
+      ---
+        const MAX_STUDENTS_PER_CLASS = 30;
+        
+============================
+
+
+    
+
 
 
 
