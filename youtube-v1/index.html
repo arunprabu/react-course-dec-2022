@@ -9,6 +9,20 @@
   <body>
     <!-- will be visible in browser's view port -->
     <header>
+      <aside>
+        <button type="button">...</button>
+        <nav id="primaryNav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/">Shorts</a></li>
+            <li><a href="/">Subscriptions</a></li>
+            <li><a href="/">Library</a></li>
+            <li><a href="/">History</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
       <a 
         href="./index.html">
           <img 
@@ -27,7 +41,7 @@
     
     <main>
       <!-- only one main tag you should in a page -->
-      <section id="suggestedTopics">
+      <div id="suggestedTopics">
         <ul>
           <li><a href="/">Cricket</a></li>
           <li><a href="/">Football</a></li>
@@ -42,7 +56,7 @@
           <li><a href="/">Science</a></li>
           <li><a href="/">Courses</a></li>
         </ul>
-      </section>
+      </div>
 
       <div id="heroContainer"> 
         <div id="heroImage">
@@ -52,11 +66,11 @@
             width="300"
             height="200">
         </div>
-        <div id="heroContent">
+        <section id="heroContent">
           <h1>Music Released this Week</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere optio minus accusamus perspiciatis.</p>
           <button type="button">Listen Now</button>
-        </div>
+        </section>
       </div>
 
       <section id="recommendedVideos">
@@ -70,7 +84,7 @@
             <img src="./assets/images/channel-profile-1.png" alt="Channel No 1">
             <div>
               <h3>
-                <a href="/">France vs Poland - Highlights</a>
+                <a href="/watch.html">France vs Poland - Highlights</a>
               </h3>
               <h4>
                 <a href="/">Channel No 1</a>
@@ -89,7 +103,7 @@
             <img src="./assets/images/channel-profile-1.png" alt="Channel No 1">
             <div>
               <h3>
-                <a href="/">England Vs Senegal - Highlights</a>
+                <a href="/watch.html">England Vs Senegal - Highlights</a>
               </h3>
               <h4>
                 <a href="/">Channel No 1</a>
@@ -108,7 +122,7 @@
             <img src="./assets/images/channel-profile-1.png" alt="Channel No 1">
             <div>
               <h3>
-                <a href="/">Japan vs Croatia - Highlights</a>
+                <a href="/watch.html">Japan vs Croatia - Highlights</a>
               </h3>
               <h4>
                 <a href="/">Channel No 1</a>
@@ -127,7 +141,7 @@
             <img src="./assets/images/channel-profile-1.png" alt="Channel No 1">
             <div>
               <h3>
-                <a href="/">Brazil vs South Korea - Highlights</a>
+                <a href="/watch.html">Brazil vs South Korea - Highlights</a>
               </h3>
               <h4>
                 <a href="/">Channel No 1</a>
@@ -143,6 +157,13 @@
     
     <footer>
       <hr>
+      <nav id="footerNav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
       <p>Copyright 2022 | Arun</p>
     </footer>
     
