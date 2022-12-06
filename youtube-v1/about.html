@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <header>
     <aside>
@@ -24,7 +26,7 @@
     </aside>
     <a href="./index.html">
       <img src="./assets/images/youtube-logo.png" alt="YouTube Logo" width="48"></a>
-  
+
     <input type="search" placeholder="Search">
     <button>Search</button>
     <button>Mic</button>
@@ -35,19 +37,57 @@
   </header>
 
   <main>
-    <h1>About YouTube!</h1>
+    <aside id="sidebarNav">
+      <nav>
+        <ul>
+          <li><a href="/about.html#aboutYouTube">About YouTube</a></li>
+          <li><a href="/about.html#YtIntroVideo">YouTube Intro Video</a></li>
+          <li><a href="/">YouTube Intro Audio</a></li>
+          <li><a href="/">YouTube Services</a></li>
+        </ul>
+      </nav>
+    </aside>
+      
+    <!-- div>section*4>h2+p -->
+    <div>
+      <section id="aboutYouTube">
+        <h1>About YouTube!</h1>
+        <p>YouTube is an American online video sharing and social media platform headquartered in San Bruno, California.
+          It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google, and
+          is the second most visited website, after Google Search. YouTube has more than 2.5 billion monthly user who
+          collectively watch more than one billion hours of videos each day.</p>
+        <a href="/index.html">Browse Videos</a>
+      </section>
 
-    <p>YouTube is an American online video sharing and social media platform headquartered in San Bruno, California. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google, and is the second most visited website, after Google Search. YouTube has more than 2.5 billion monthly user who collectively watch more than one billion hours of videos each day.</p>
+      <section id="YtIntroVideo">
+        <h2>YouTube Intro Video</h2>
+        <video width="600" controls>
+          <source src="./assets/videos/all-about-youtube.mp4" type="video/mp4">
+        </video>
+      </section>
 
-    <a href="/index.html">Browse Videos</a>
-    
-    <br>
+      <section>
+        <h2>YouTube Intro Audio</h2>
+        TODO: audio should come here
+      </section>
 
-    <video width="600" controls>
-      <source src="./assets/videos/all-about-youtube.mp4" type="video/mp4">
-    </video>
+      <section>
+        <h2>YouTube Services</h2>
+        <h3>YouTube Premium</h3>
+        <p>YouTube Premium (formerly YouTube Red) is YouTube's premium subscription service. It offers advertising-free
+          streaming, access to original programming, and background and offline video playback on mobile devices.</p>
 
-    
+        <h3>YouTube Kids</h3>
+        <p>YouTube Kids is an American children's video app developed by YouTube, a subsidiary of Google. </p>
+      
+        <h3>YouTube Music</h3>
+        <p>On September 28, 2016, YouTube named Lyor Cohen, the co-founder of 300 Entertainment and former Warner Music Group executive, the Global Head of Music.</p>
+
+        <h3>YouTube Movies</h3>
+        <p>YouTube Movies is a service by YouTube that shows movies via its website. Around 100–500 movies are free to view, with ads.</p>
+      </section>
+    </div>
+
   </main>
 
   <footer>
@@ -62,4 +102,5 @@
     <p>Copyright 2022 | Arun</p>
   </footer>
 </body>
+
 </html>
