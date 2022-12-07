@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
 <body>
   <!-- will be visible in browser's view port -->
   <header>
@@ -25,7 +27,7 @@
     </aside>
     <a href="./index.html">
       <img src="./assets/images/youtube-logo.png" alt="YouTube Logo" width="48"></a>
-  
+
     <input type="search" placeholder="Search">
     <button>Search</button>
     <button>Mic</button>
@@ -37,6 +39,70 @@
 
   <main>
     <h1>Contact us Page!</h1>
+
+    <div>
+      <section>
+        <h2>Locate us here</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497780.70384712645!2d79.8154287418101!3d12.913393400000034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c6f13fca667%3A0x84dfc419b2e83941!2sCognizant%20Technology%20Solutions!5e0!3m2!1sen!2sin!4v1670390499686!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section>
+        <h2>Reach us here</h2>
+        <address>
+          <h4>Cognizant Technology Solutions</h4>
+          W64F+PG2 ELCOT SEZ, <br>
+          Elcot Sez, SEZ Ave, Elcot Sez, <br>
+          Sholinganallur, Chennai,
+          Tamil Nadu 600119 <br>
+          <p>Phone: 2443453434</p>
+          <p>E-Mail: <a href="mailto:contact@cognizant.com">contact@cognizant.com</a></p>
+        </address>
+      </section>
+    </div>
+
+    <section>
+      <h2>Contact us by filling the form</h2>
+      <form>
+        <div>
+          <label for="nameInput">Enter Name:</label>
+          <input id="nameInput" 
+            type="text" 
+            name="fullName" 
+            placeholder="Enter Your Name" 
+            required>
+        </div>
+        <div>
+          <label for="emailInput">Enter E-Mail:</label>
+          <input id="emailInput" 
+            type="email" 
+            name="email" 
+            placeholder="Enter Your Email"
+            required>
+        </div>
+        <div>
+          <label for="phoneInput">Enter Phone:</label> 
+          <input id="phoneInput" 
+            type="tel" 
+            name="phone" 
+            placeholder="Enter Your Phone"
+            required>
+        </div>
+        <div>
+          <label for="phoneInput">Enter Phone:</label>
+          <textarea 
+            rows="5" 
+            cols="20" 
+            name="query" 
+            placeholder="Enter Your Query (max 250)" 
+            required></textarea>
+        </div>
+        <button type="reset">Reset Form</button>
+        <button type="submit">Send Query</button>
+      </form>
+    </section>
   </main>
 
   <footer>
@@ -51,4 +117,5 @@
     <p>Copyright 2022 | Arun</p>
   </footer>
 </body>
+
 </html>

@@ -111,6 +111,9 @@ Website
   CSS 
   --
     * Presentation Layer 
+
+    CSS, CSS3, Responsive CSS, SASS and LESS 
+
   
   JS 
   --
@@ -148,7 +151,7 @@ Naming Conventions
     3. kebab-case 
         * recommended for css classes 
         * recommended for urls 
-        * recommended for file names, folder names, assets in front end       projects 
+        * recommended for file names, folder names, assets in front end projects 
         * okay for id's of html elements if your architect accepts
 
         Examples:
@@ -167,8 +170,71 @@ Naming Conventions
           
   ============================
 
+CLEAN CODE 
+---
 
-    
+SEO Basics
+--
+  * how to make our website search engine friendly? 
+  * On-page SEO 
+      1. Proper Page Title 
+      2. H1 Tag 
+      3. Meta Desc and Meta Keywords 
+      4. Content with h2-h6 and many paragraphs
+      5. Images with alt 
+      6. Proper File names and URLs
+      7. Valid Links without much of read more, learn more 
+      
+      and many more
+      
+
+  * Off-page SEO 
+
+==========================
+CSS - Cascading Style Sheet 
+---
+  1. Inline Styles 
+      * coded on the element directly. 
+
+    Disadv
+    --
+      1. Styles are not re-usable in other elements
+      2. Styles are not re-usable in other pages
+      3. Bloating HTML files with CSS styles (Structural + Presentation together is wrong)
+
+  2. Internal Styles 
+      * coded inside html file within <style></style>
+
+
+  3. External Styles 
+
+
+Syntax of CSS
+---
+  selector {
+    /* Style Definition */
+    property: value;
+    another-property: another-value;
+  }
+
+Selectors 
+---
+  1. Element Selector 
+  2. Id Selector 
+  3. Class Selector 
+  4. Attribute Selector
+  5. Pseudo Selector [TODO]
+
+
+Normalising Styles 
+--
+
+===============================
+
+
+WCAG
+---
+
 
 
 
