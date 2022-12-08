@@ -1,0 +1,79 @@
+/* External Styles */
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+button {
+  background-color: #fff;
+  border: 0px; 
+}
+
+/* Styles for header */
+/* Class selector */
+.header-wrapper {
+  margin: 0 auto;
+  padding: 12px 0;  /* */
+  width: 85%;
+}
+.collapsible-menu,
+.main-header {
+  display: inline-block;
+}
+
+.logo-link {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  vertical-align: middle;
+}
+
+.controls-bar {
+  display: inline-block;
+  width: 1000px;
+  text-align: right; /* */
+}
+.search-input { /* */
+  width: 500px;
+  padding: 8px 12px;
+  font-size: 15px;
+  outline: none;
+  border: solid 1px #bbb;
+  border-radius: 16px;
+}
+
+
+
+
+
+/* Styles for For Home Page */
+/* Id Selector */
+#suggestedTopics {
+  border-bottom: 4px solid #ccc;
+  height: 34px;
+  padding-top: 12px;
+}
+
+/* finding nested element */
+#suggestedTopics ul {
+  margin: 0;
+  padding: 0;
+}
+
+#suggestedTopics ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 2px;
+}
+
+#suggestedTopics ul li a{
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  vertical-align: middle;
+  background-color: #ebebeb;
+  padding: 5px 7px; /* top right bottom left */
+  border-radius: 5px;
+}
+
+

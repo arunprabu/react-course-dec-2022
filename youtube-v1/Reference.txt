@@ -204,9 +204,16 @@ CSS - Cascading Style Sheet
 
   2. Internal Styles 
       * coded inside html file within <style></style>
+      * styles are page-wide
+      
+    Disadv
+    ---
+      1. Styles are not re-usable in other pages
+      2. Bloating HTML files with CSS styles (Structural + Presentation together is wrong)
 
-
-  3. External Styles 
+  3. External Styles (Recommended)
+      * coded in separate css file (that is stylesheet with extension .css)
+      * then, link the css file within html file 
 
 
 Syntax of CSS
@@ -219,17 +226,36 @@ Syntax of CSS
 
 Selectors 
 ---
-  1. Element Selector 
+  1. Element Selector [DONE]
   2. Id Selector 
   3. Class Selector 
   4. Attribute Selector
   5. Pseudo Selector [TODO]
 
-
 Normalising Styles 
 --
 
+
+CSS Precedence 
+--
+
+CSS Specificity 
+
 ===============================
+
+Box Model 
+
+Display Property 
+
+Grid and Flex Boxes 
+
+CSS3 
+
+Font Embedding and loading external fonts
+
+Responsive CSS 
+
+
 
 
 WCAG
