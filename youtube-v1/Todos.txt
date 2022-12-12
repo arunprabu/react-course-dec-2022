@@ -3,3 +3,10 @@
 3. Create a New Page 'tables-demo.html' 
 4. Add font-awesome icon for mic and signin 
 5. style sign in button like that of in YouTube website   
+6. Learn about CSS Specificity 
+    [Ref: https://www.w3schools.com/css/css_specificity.asp
+     Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity ]
+7. Style the footer with 'nav' center aligned and menus in one line + have top border for footer
+8. Style the hero section of home page
+9.  
+

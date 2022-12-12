@@ -5,35 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linking Normalize.css External Styles -->
+  <link rel="stylesheet" href="./assets/styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Linking Custom External Styles -->
+  <link rel="stylesheet" href="./assets/styles/main.css">
   <title>Document</title>
 </head>
 
 <body>
   <header>
-    <aside>
-      <button type="button">...</button>
-      <nav id="primaryNav">
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/">Shorts</a></li>
-          <li><a href="/">Subscriptions</a></li>
-          <li><a href="/">Library</a></li>
-          <li><a href="/">History</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <a href="./index.html">
-      <img src="./assets/images/youtube-logo.png" alt="YouTube Logo" width="48"></a>
-
-    <input type="search" placeholder="Search">
-    <button>Search</button>
-    <button>Mic</button>
-    <button>...</button>
-    <button>Sign in</button>
-    will add menu after sometime
-    <hr>
+    <div class="header-wrapper">
+      <aside class="collapsible-menu">
+        <button type="button"><i class="fa-solid fa-bars"></i></button>
+        <!-- <nav id="primaryNav">
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/">Shorts</a></li>
+                  <li><a href="/">Subscriptions</a></li>
+                  <li><a href="/">Library</a></li>
+                  <li><a href="/">History</a></li>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/contact-us.html">Contact</a></li>
+                </ul>
+              </nav> -->
+      </aside>
+      <div class="main-header">
+        <a href="./index.html" class="logo-link">
+          <img src="./assets/images/youtube-logo.png" alt="YouTube Logo" width="48"></a>
+        <div class="controls-bar">
+          <input type="search" class="search-input" placeholder="Search">
+          <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button type="button">Mic</button>
+          <button type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <button type="button">Sign in</button>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -89,8 +99,7 @@
 
   </main>
 
-  <footer>
-    <hr>
+  <footer class="text-center">
     <nav id="footerNav">
       <ul>
         <li><a href="/index.html">Home</a></li>
@@ -98,7 +107,7 @@
         <li><a href="/contact-us.html">Contact</a></li>
       </ul>
     </nav>
-    <p>Copyright 2022 | Arun</p>
+    <p>Copyright &copy; 2022 | Arun</p>
   </footer>
 </body>
 

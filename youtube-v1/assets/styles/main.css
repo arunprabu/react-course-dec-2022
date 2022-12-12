@@ -8,16 +8,34 @@ button {
   border: 0px; 
 }
 
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+.red {
+ border: 1px solid red; 
+}
+.green {
+  border: 1px solid green;
+}
+
 /* Styles for header */
 /* Class selector */
 .header-wrapper {
   margin: 0 auto;
   padding: 12px 0;  /* */
-  width: 85%;
+  width: 80%;
 }
 .collapsible-menu,
 .main-header {
   display: inline-block;
+}
+.collapsible-menu{
+  width: 26px;
+}
+
+.main-header {
+  width: calc(100% - 32px);
 }
 
 .logo-link {
@@ -29,8 +47,8 @@ button {
 
 .controls-bar {
   display: inline-block;
-  width: 1000px;
-  text-align: right; /* */
+  width: calc(100% - 54px);
+  text-align: right;
 }
 .search-input { /* */
   width: 500px;
@@ -40,6 +58,20 @@ button {
   border: solid 1px #bbb;
   border-radius: 16px;
 }
+
+/* Styles for Footer */
+footer {
+  border-top: 1px solid rgb(173, 173, 173);
+}
+footer ul{
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 6px;
+}
+
 
 
 
@@ -55,8 +87,16 @@ button {
 
 /* finding nested element */
 #suggestedTopics ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-x: scroll;
+  height: 40px;
+  /* the following will work in firefox alone */
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
 }
 
 #suggestedTopics ul li {
@@ -75,5 +115,4 @@ button {
   padding: 5px 7px; /* top right bottom left */
   border-radius: 5px;
 }
-
 
