@@ -227,28 +227,26 @@ Syntax of CSS
 Selectors 
 ---
   1. Element Selector [DONE]
-  2. Id Selector 
-  3. Class Selector 
+  2. Id Selector [DONE]
+  3. Class Selector [DONE] (Recommended)
   4. Attribute Selector
   5. Pseudo Selector [TODO]
 
-Normalising Styles 
+Normalising Styles [DONE]
 --
-
-
-CSS Precedence 
+CSS Precedence [DONE]
 --
-
-CSS Specificity 
-
+CSS Specificity [TODO]
 ===============================
+Box Model [DONE]
 
-Box Model 
+Display Property [DONE]
 
-Display Property 
+Grid and Flex Boxes [DONE]
 
-Grid and Flex Boxes 
+Position 
 
+---
 CSS3 
 
 Font Embedding and loading external fonts
