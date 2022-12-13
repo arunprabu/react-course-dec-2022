@@ -9,5 +9,7 @@
 7. Style the footer with 'nav' center aligned and menus in one line + have top border for footer
 8. Style the hero section of home page
 9. Style the recommended videos section with display grid properly. 
+10. Make the header fixed on all pages 
+11. Complete watch.html 
 
 
