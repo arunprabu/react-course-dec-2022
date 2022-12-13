@@ -24,7 +24,7 @@ button {
 .header-wrapper {
   margin: 0 auto;
   padding: 12px 0;  /* */
-  width: 80%;
+  width: 1280px;
 }
 .collapsible-menu,
 .main-header {
@@ -72,11 +72,6 @@ footer ul li {
   margin: 0 6px;
 }
 
-
-
-
-
-
 /* Styles for For Home Page */
 /* Id Selector */
 #suggestedTopics {
@@ -89,7 +84,7 @@ footer ul li {
 #suggestedTopics ul {
   margin: 0 auto;
   padding: 0;
-  width: 80%;
+  width: 1280px;
   overflow: hidden;
   white-space: nowrap;
   overflow-x: scroll;
@@ -116,3 +111,11 @@ footer ul li {
   border-radius: 5px;
 }
 
+.hero-container{
+  width: 1280px;
+  margin: 0 auto;
+}
+.recommended-videos {
+  width: 1280px;
+  margin: 0 auto;
+}
