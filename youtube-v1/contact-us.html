@@ -76,7 +76,7 @@
     <section>
       <h2>Contact us by filling the form</h2>
       <form class="contact-form">
-        <div>
+        <div class="field-group">
           <label for="nameInput">Enter Name:</label>
           <input id="nameInput" 
             type="text" 
@@ -84,7 +84,7 @@
             placeholder="Enter Your Name" 
             required>
         </div>
-        <div>
+        <div class="field-group">
           <label for="emailInput">Enter E-Mail:</label>
           <input id="emailInput" 
             type="email" 
@@ -92,7 +92,7 @@
             placeholder="Enter Your Email"
             required>
         </div>
-        <div>
+        <div class="field-group">
           <label for="phoneInput">Enter Phone:</label> 
           <input id="phoneInput" 
             type="tel" 
@@ -100,17 +100,20 @@
             placeholder="Enter Your Phone"
             required>
         </div>
-        <div>
-          <label for="phoneInput">Enter Phone:</label>
+        <div class="field-group">
+          <label for="queryInput" class="query-label">Enter Query:</label>
           <textarea 
+            id="queryInput"
             rows="5" 
             cols="20" 
             name="query" 
             placeholder="Enter Your Query (max 250)" 
             required></textarea>
         </div>
-        <button type="reset">Reset Form</button>
-        <button type="submit">Send Query</button>
+        <div class="field-group">
+          <button type="submit">Send Query</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
     </section>
   </main>

@@ -126,6 +126,52 @@ footer ul li {
 
 /* style for contact page */
 .contact-form {
-  border: solid 1px red;
+  border: solid 1px #333;
   margin: 0 auto;
+  width: 510px;
+  padding: 50px;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.field-group {
+  padding: 10px;
+}
+.contact-form .field-group label{
+  width: 140px;
+  display: inline-block;
+}
+.contact-form .field-group input {
+  width: 315px;
+  border: 1px solid #0043c6;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+.contact-form .query-label{
+  vertical-align: top;
+  margin-top: 12px;
+}
+.contact-form button{
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+/* attribute selector */
+.contact-form button[type='submit'] {
+  margin-left: 145px;
+  background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+}
+.contact-form button[type='reset']{
+  background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+}
+
+/* pseudo selector */
+.contact-form button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
