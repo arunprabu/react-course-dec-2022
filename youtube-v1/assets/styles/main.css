@@ -122,3 +122,10 @@ footer ul li {
 
 
 /* Style for watch page */
+
+
+/* style for contact page */
+.contact-form {
+  border: solid 1px red;
+  margin: 0 auto;
+}
