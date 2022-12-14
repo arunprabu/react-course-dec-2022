@@ -249,8 +249,8 @@ Position [DONE]
 ---
 CSS3 [DONE]
 Animated Page Elements [ DONE ]
-Styling contact Form 
-Font Embedding and loading external fonts
+Styling contact Form [DONE]
+Font Embedding and loading external fonts 
 Responsive CSS 
 
 SASS & LESS 
