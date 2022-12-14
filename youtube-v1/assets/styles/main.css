@@ -1,6 +1,6 @@
 /* External Styles */
 @font-face {
-  font-family: 'Roboto'; /* in what name you want to expose the font */
+  font-family: Roboto; /* in what name you want to expose the font */
   src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
@@ -18,7 +18,7 @@ button {
   text-align: center;
 }
 .red {
- border: 1px solid red; 
+  border: 1px solid red; 
 }
 .green {
   border: 1px solid green;
@@ -179,4 +179,95 @@ footer ul li {
   background-position: right center;
   color: #fff;
   text-decoration: none;
+}
+
+
+/* Responsive CSS */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+
+  .controls-bar{
+    display: none;
+  }
+
+  #suggestedTopics ul {
+    width: 400px;
+  }
+ .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+  .controls-bar {
+    display: none;
+  }
+
+  #suggestedTopics ul {
+    width: 550px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: lightpink;
+  }
+  .controls-bar {
+    display: none;
+  }
+
+  #suggestedTopics ul {
+    width: 750px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: lightgreen;
+  }
+  .controls-bar {
+    display: inline-block;
+  }
+
+  #suggestedTopics ul {
+    width: 950px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: lightskyblue;
+  }
+
+  #suggestedTopics ul {
+    width: 1172px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
 }

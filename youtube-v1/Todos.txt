@@ -13,5 +13,7 @@
 11. Complete watch.html 
 12. complete contact-us.html 
 13. complete about.html 
+14. write responsive css for home, watch pages 
+
 
 

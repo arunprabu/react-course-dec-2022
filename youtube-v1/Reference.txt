@@ -250,16 +250,18 @@ Position [DONE]
 CSS3 [DONE]
 Animated Page Elements [ DONE ]
 Styling contact Form [DONE]
-Font Embedding and loading external fonts 
-Responsive CSS 
+Font Embedding and loading external fonts [DONE]
+Responsive CSS [DONE]
+--
 
-SASS & LESS 
+SASS & LESS (1 Hour)
 --
 
 WCAG (2-3 hours)
 ---
 
-
+JS 
+---
 
 
 
