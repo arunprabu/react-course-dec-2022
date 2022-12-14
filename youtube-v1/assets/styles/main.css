@@ -1,6 +1,11 @@
 /* External Styles */
+@font-face {
+  font-family: 'Roboto'; /* in what name you want to expose the font */
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
 body {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 button {
