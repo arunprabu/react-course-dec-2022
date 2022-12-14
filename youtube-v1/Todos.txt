@@ -11,5 +11,7 @@
 9. Style the recommended videos section with display grid properly. 
 10. Make the header fixed on all pages 
 11. Complete watch.html 
+12. complete contact-us.html 
+13. complete about.html 
 
 
