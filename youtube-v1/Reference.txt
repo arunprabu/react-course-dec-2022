@@ -262,9 +262,72 @@ WCAG (2-3 hours) [DONE]
 
 JS 
 ---
+  Basic JS 
+  Essential JS for React JS Dev 
+    ES2015, 
+    ES2017,
+    ES2018
+  HTML5 JS API's 
+  Custom Elements 
+  TypeScript 
+
+
+====
 
 
 
+1. Desktop Apps 
+    Java / DotNet / Python / C / C++ / JavaScript (ElectronJS)
+
+2. Front End App 
+    JavaScript (JS / React JS / Angular / VueJS)
+
+3. Back End App 
+    Java / DotNet/ PHP / Perl / Python / Ruby / JavaScript (NodeJS) 
+
+4. Mobile Apps (iOS/iPadOS & Android)
+    Apple Swift                     => iOS/iPadOS/watchOS/AppleTV Apps
+    Kotlin (Java)                   => Android Apps
+    JavaScript (Ionic/ReactNative)  => iOS/iPadOS/Android Apps 
+    Xamarine (DotNet)               => iOS/iPadOS/Android Apps 
+
+5. Databases 
+    SQL         => MySQL/MariaDB/Oracle/PostgreSQL 
+    JavaScript  => MongoDB 
+
+
+
+
+Types of Language (around Data type)
+  1. Strictly / Strongly Typed Languages
+      Examples: Java, C#, C, C++
+      Datatypes (primitive): int, double, float, char, byte, long, boolean 
+
+      Syntax in Java/C#:
+      ------------------
+        String myName = "Arun";
+        myName = "John"; // valid 
+        myName = 100; // compiler error 
+        
+  2. Loosely Typed / Dynamically-typed Languages
+      Examples: JavaScript, PHP, Python 
+      
+      Datatypes in JS (primitive): string, number, boolean, undefined, null, symbol (2015), big int (2017)
+      ---------------------------
+
+      Syntax in JavaScript:
+      --------------------
+        var x = 'John'; // valid 
+        x = true; // valid 
+        x = undefined; // valid 
+        x = null; // valid 
+        x = []; // valid 
+        x = {}; // valid 
+        x = function() { // valid 
+        }
+        
+
+----
 
 
 
