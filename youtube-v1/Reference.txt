@@ -254,10 +254,10 @@ Font Embedding and loading external fonts [DONE]
 Responsive CSS [DONE]
 --
 
-SASS & LESS (1 Hour)
+SASS & LESS (1 Hour) [DONE]
 --
 
-WCAG (2-3 hours)
+WCAG (2-3 hours) [DONE]
 ---
 
 JS 

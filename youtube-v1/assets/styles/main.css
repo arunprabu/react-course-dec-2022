@@ -196,9 +196,11 @@ footer ul li {
   #suggestedTopics ul {
     width: 400px;
   }
- .grid-container {
-    display: grid;
-    grid-template-columns: auto;
+  img,
+  video,
+  iframe {
+    max-inline-size: 100%;
+    block-size: auto;
   }
 }
 
@@ -214,10 +216,6 @@ footer ul li {
   #suggestedTopics ul {
     width: 550px;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -231,10 +229,6 @@ footer ul li {
 
   #suggestedTopics ul {
     width: 750px;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
   }
 }
 
@@ -250,10 +244,6 @@ footer ul li {
   #suggestedTopics ul {
     width: 950px;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -264,11 +254,6 @@ footer ul li {
 
   #suggestedTopics ul {
     width: 1172px;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
   }
 }
 

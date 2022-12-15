@@ -37,7 +37,7 @@
         <a href="./index.html" class="logo-link">
           <img src="./assets/images/youtube-logo.png" alt="YouTube Logo" width="48"></a>
         <div class="controls-bar">
-          <input type="search" class="search-input" placeholder="Search">
+          <input type="search" class="search-input" placeholder="Search" aria-label="Enter Search Query">
           <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
           <button type="button">Mic</button>
           <button type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
@@ -82,7 +82,8 @@
             type="text" 
             name="fullName" 
             placeholder="Enter Your Name" 
-            required>
+            required
+            aria-required="true">
         </div>
         <div class="field-group">
           <label for="emailInput">Enter E-Mail:</label>
@@ -90,7 +91,8 @@
             type="email" 
             name="email" 
             placeholder="Enter Your Email"
-            required>
+            required
+            aria-required="true">
         </div>
         <div class="field-group">
           <label for="phoneInput">Enter Phone:</label> 
@@ -98,7 +100,8 @@
             type="tel" 
             name="phone" 
             placeholder="Enter Your Phone"
-            required>
+            required
+            aria-required="true">
         </div>
         <div class="field-group">
           <label for="queryInput" class="query-label">Enter Query:</label>
@@ -108,7 +111,8 @@
             cols="20" 
             name="query" 
             placeholder="Enter Your Query (max 250)" 
-            required></textarea>
+            required
+            aria-required="true"></textarea>
         </div>
         <div class="field-group">
           <button type="submit">Send Query</button>
