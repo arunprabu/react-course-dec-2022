@@ -229,7 +229,7 @@ Selectors
   1. Element Selector [DONE]
   2. Id Selector [DONE]
   3. Class Selector [DONE] (Recommended)
-  4. Attribute Selector
+  4. Attribute Selector [DONE]
   5. Pseudo Selector [TODO]
 
 Normalising Styles [DONE]
