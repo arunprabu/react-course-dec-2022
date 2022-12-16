@@ -24,4 +24,5 @@ JS TODOS
 ===
 1. write a function calc. receive three arguments namely 'operation', 'num1', 'num2'. 
     based on the 'operation' return the calculated output 
-    
+    possible 'operation' can be 'ADD', 'SUBTRACT', 'MULTIPLY', 'DIVIDE' 
+
