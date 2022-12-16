@@ -18,3 +18,10 @@
 16. Fix all accessibility issues in home, watch and contact pages (use the tool: Wave)
     Refer: https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh
 
+
+
+JS TODOS 
+===
+1. write a function calc. receive three arguments namely 'operation', 'num1', 'num2'. 
+    based on the 'operation' return the calculated output 
+    

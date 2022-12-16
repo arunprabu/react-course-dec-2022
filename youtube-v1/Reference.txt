@@ -275,7 +275,6 @@ JS
 ====
 
 
-
 1. Desktop Apps 
     Java / DotNet / Python / C / C++ / JavaScript (ElectronJS)
 
@@ -294,8 +293,6 @@ JS
 5. Databases 
     SQL         => MySQL/MariaDB/Oracle/PostgreSQL 
     JavaScript  => MongoDB 
-
-
 
 
 Types of Language (around Data type)
@@ -329,6 +326,30 @@ Types of Language (around Data type)
 
 ----
 
+JS 
+--
+  
+  History 
+  --
+    * 1995 
+
+  ECMAScript by ECMA International 
+  --
+    * Standard 
+    * grammar 
+
+    Implementations:
+    ---
+      JavaScript, JScript, ActionScript, Google AppsScript, 
+
+    Until May 2015 (Till ES5.1 Edition)
+    --
+      JS was not Object oriented (class, extends, import, export)
+
+    From June 2015 (till ES2015 / ES6)
+    ---
+      JS has become Object oriented (class, extends, import, export)
+    
 
 
 
