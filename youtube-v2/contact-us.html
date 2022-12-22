@@ -75,13 +75,14 @@
 
     <section>
       <h2>Contact us by filling the form</h2>
-      <form class="contact-form">
+      <form class="contact-form" onsubmit="handleContactFormSubmit(event)">
         <div class="field-group">
           <label for="nameInput">Enter Name:</label>
           <input id="nameInput" 
             type="text" 
             name="fullName" 
             placeholder="Enter Your Name" 
+            value="arun"
             required
             aria-required="true">
         </div>
@@ -90,6 +91,7 @@
           <input id="emailInput" 
             type="email" 
             name="email" 
+            value="a@b.com"
             placeholder="Enter Your Email"
             required
             aria-required="true">
@@ -99,6 +101,7 @@
           <input id="phoneInput" 
             type="tel" 
             name="phone" 
+            value="245234523"
             placeholder="Enter Your Phone"
             required
             aria-required="true">
@@ -112,11 +115,14 @@
             name="query" 
             placeholder="Enter Your Query (max 250)" 
             required
-            aria-required="true"></textarea>
+            aria-required="true">random data</textarea>
         </div>
         <div class="field-group">
           <button type="submit">Send Query</button>
           <button type="reset">Reset</button>
+        </div>
+        <div id="confirmation" class="confirmation-msg">
+          Saved Successfully!
         </div>
       </form>
     </section>
@@ -132,6 +138,8 @@
     </nav>
     <p>Copyright &copy; 2022 | Arun</p>
   </footer>
+
+  <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>

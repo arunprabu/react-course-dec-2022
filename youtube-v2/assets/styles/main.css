@@ -178,6 +178,13 @@ footer ul li {
   text-decoration: none;
 }
 
+.confirmation-msg {
+  background-color: lightgreen;
+  border: solid 1px green;
+  padding: 10px 20px;
+  display: none;
+}
+
 
 /* Responsive CSS */
 /* Extra small devices (phones, 600px and down) */
