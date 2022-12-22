@@ -1,0 +1,387 @@
+
+Timing: 9.30 AM to 6.30 PM 
+---
+
+Hands-on 
+---
+  Explain => Coding => Demo => Try it out => (Todos) => (Review) 
+
+  Let's make it work => Let's make it better 
+
+Topics
+---
+  3 Weeks 
+  ---
+    HTML, CSS,  (Project #1)
+    JS, ES2015  (Project #2)
+    TypeScript  
+
+
+  4-Weeks
+  ---
+    React JS (Project #3)
+    Redux (Project #4)
+
+---
+
+
+Softwares Required
+---
+  * Node JS v 14+ (even version) . 
+  * Visual Studio Code Editor
+  * Browser ( Chrome / Edge / Firefox / Safari / Opera / Brave )
+  * Postman
+
+---
+
+Web Development
+---
+  1. Front End Development
+      HTML, CSS, JS and Many JS libraries and Frameworks
+
+        Client Tool
+        --
+          Browser 
+          Postman / Advanced REST Client
+          
+
+  2. Back End Development 
+      Java/.Net/Perl/Python/Ruby/PHP/NodeJS + Databases (MySQL/Oracle/PostgreSQL/MongoDB/MariaDB)
+
+        Toolsets
+        ---
+          Java (file1.java) => (JAVAC) => bytecode (intermediate code) => ( JRE ) => Machine Language 
+
+          Servers: 
+            1. Web Servers
+                Tomcat
+                  Response: HTML, CSS, JS (Traditional Back End / SSR Apps)
+                  Response: XML (SOAP Api)
+                  Response: JSON (Modern Back End / RESTful API)
+
+            2. Application Servers 
+                JBoss (Java)
+                Weblogic (Java)
+                IBM Websphere (Java)
+                Apache (PHP)
+                IIS (DotNet)
+
+
+Browser
+---
+  will have 
+  1. HTML Renderer (html)
+  2. CSS Parser (css)
+  3. JS Engine (js)
+
+  a.k.a Browser Core 
+
+Browser Family
+---
+  Netscape Navigator (gone)
+  Microsoft Internet Explorer (gone)
+  Opera (closed source - gone)
+
+  Apple Safari (Webkit Core Opensourced)
+  Mozilla Firefox (Mozilla Core Opensourced)
+  Google Chrome ( Opensourced Chromium Core = Webkit + Mozilla + JS Engine )
+  Opera Browser ( developed out of Chromium Core )
+  Edge Browser ( developed out of Chromium Core )
+  Brave Browser ( developed out of Chromium Core )
+
+---
+
+
+Website 
+-------
+  HTML
+  --- 
+    * Structural Layer
+
+    Layouts 
+    --
+      1. Fixed Layouts 
+      2. Fluid Layouts
+
+    HTML Elements 
+    --
+      1. Block Elements 
+      2. Inline Elements
+
+  CSS 
+  --
+    * Presentation Layer 
+
+    CSS, CSS3, Responsive CSS, SASS and LESS 
+
+  
+  JS 
+  --
+    * Interaction Layer 
+
+
+Naming Conventions
+---
+
+  Casing Types 
+  ==========
+    1. PascalCase 
+        * recommended for Object Oriented Program's (Java, JS & TS) classes 
+        * also recommended for Interface in Java & TypeScript 
+
+        examples:
+          class CarDetails{
+
+          }
+
+          interface Employee{
+
+          }
+
+    2. camelCase
+        * recommended for variables, const, functions, methods in JS & TS 
+        * recommended for id's of html elements 
+
+        examples: 
+          var myCar = 'BMW'; 
+          function getCarInfo() {
+            // .... 
+          }
+
+    3. kebab-case 
+        * recommended for css classes 
+        * recommended for urls 
+        * recommended for file names, folder names, assets in front end projects 
+        * okay for id's of html elements if your architect accepts
+
+        Examples:
+        --
+          btn-primary 
+          slideshow-container 
+          youtube-logo.png 
+
+    4. snake_case 
+        * never ever use this.
+        * okay for const in JS & TS if architect accepts 
+
+        example:
+        ---
+          const MAX_STUDENTS_PER_CLASS = 30;
+          
+  ============================
+
+CLEAN CODE 
+---
+
+SEO Basics
+--
+  * how to make our website search engine friendly? 
+  * On-page SEO 
+      1. Proper Page Title 
+      2. H1 Tag 
+      3. Meta Desc and Meta Keywords 
+      4. Content with h2-h6 and many paragraphs
+      5. Images with alt 
+      6. Proper File names and URLs
+      7. Valid Links without much of read more, learn more 
+      
+      and many more
+      
+
+  * Off-page SEO 
+
+==========================
+CSS - Cascading Style Sheet 
+---
+  1. Inline Styles 
+      * coded on the element directly. 
+
+    Disadv
+    --
+      1. Styles are not re-usable in other elements
+      2. Styles are not re-usable in other pages
+      3. Bloating HTML files with CSS styles (Structural + Presentation together is wrong)
+
+  2. Internal Styles 
+      * coded inside html file within <style></style>
+      * styles are page-wide
+      
+    Disadv
+    ---
+      1. Styles are not re-usable in other pages
+      2. Bloating HTML files with CSS styles (Structural + Presentation together is wrong)
+
+  3. External Styles (Recommended)
+      * coded in separate css file (that is stylesheet with extension .css)
+      * then, link the css file within html file 
+
+
+Syntax of CSS
+---
+  selector {
+    /* Style Definition */
+    property: value;
+    another-property: another-value;
+  }
+
+Selectors 
+---
+  1. Element Selector [DONE]
+  2. Id Selector [DONE]
+  3. Class Selector [DONE] (Recommended)
+  4. Attribute Selector [DONE]
+  5. Pseudo Selector [TODO]
+
+Normalising Styles [DONE]
+--
+CSS Precedence [DONE]
+--
+CSS Specificity [TODO]
+===============================
+Box Model [DONE]
+
+Display Property [DONE]
+
+Grid and Flex Boxes [DONE]
+
+Position [DONE]
+
+---
+CSS3 [DONE]
+Animated Page Elements [ DONE ]
+Styling contact Form [DONE]
+Font Embedding and loading external fonts [DONE]
+Responsive CSS [DONE]
+--
+
+SASS & LESS (1 Hour) [DONE]
+--
+
+WCAG (2-3 hours) [DONE]
+---
+
+JS 
+---
+  Basic JS 
+  Essential JS for React JS Dev 
+    ES2015, 
+    ES2017,
+    ES2018
+  HTML5 JS API's 
+  Custom Elements 
+  TypeScript 
+
+
+====
+
+
+1. Desktop Apps 
+    Java / DotNet / Python / C / C++ / JavaScript (ElectronJS)
+
+2. Front End App 
+    JavaScript (JS / React JS / Angular / VueJS)
+
+3. Back End App 
+    Java / DotNet/ PHP / Perl / Python / Ruby / JavaScript (NodeJS) 
+
+4. Mobile Apps (iOS/iPadOS & Android)
+    Apple Swift                     => iOS/iPadOS/watchOS/AppleTV Apps
+    Kotlin (Java)                   => Android Apps
+    JavaScript (Ionic/ReactNative)  => iOS/iPadOS/Android Apps 
+    Xamarine (DotNet)               => iOS/iPadOS/Android Apps 
+
+5. Databases 
+    SQL         => MySQL/MariaDB/Oracle/PostgreSQL 
+    JavaScript  => MongoDB 
+
+
+Types of Language (around Data type)
+  1. Strictly / Strongly Typed Languages
+      Examples: Java, C#, C, C++
+      Datatypes (primitive): int, double, float, char, byte, long, boolean 
+
+      Syntax in Java/C#:
+      ------------------
+        String myName = "Arun";
+        myName = "John"; // valid 
+        myName = 100; // compiler error 
+        
+  2. Loosely Typed / Dynamically-typed Languages
+      Examples: JavaScript, PHP, Python 
+      
+      Datatypes in JS (primitive): string, number, boolean, undefined, null, symbol (2015), big int (2017)
+      ---------------------------
+
+      Syntax in JavaScript:
+      --------------------
+        var x = 'John'; // valid 
+        x = true; // valid 
+        x = undefined; // valid 
+        x = null; // valid 
+        x = []; // valid 
+        x = {}; // valid 
+        x = function() { // valid 
+        }
+        
+
+----
+
+JS 
+--
+  
+  History 
+  --
+    * 1995 
+
+  ECMAScript by ECMA International 
+  --
+    * Standard 
+    * grammar 
+
+    Implementations:
+    ---
+      JavaScript, JScript, ActionScript, Google AppsScript, 
+
+    Until May 2015 (Till ES5.1 Edition)
+    --
+      JS was not Object oriented (class, extends, import, export)
+
+    From June 2015 (till ES2015 / ES6)
+    ---
+      JS has become Object oriented (class, extends, import, export)
+    
+
+    New Features in ES2015
+    --
+      let 
+      const 
+
+      
+
+    
+
+Integrating JS within HTML 
+----
+  1. Inline JavaScript 
+  2. Internal JavaScript
+  3. External JavaScript
+
+
+Web Storage / Storage 
+--
+  1. LocalStorage 
+  2. SessionStorage 
+
+
+
+
+
+
+
+
+
+
+
+Webapps 
+--
+

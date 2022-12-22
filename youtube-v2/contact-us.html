@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Normalize.css External Styles -->
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Linking Custom External Styles -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>Document</title>
+  </head>
+
+<body>
+  <!-- will be visible in browser's view port -->
+  <header>
+    <div class="header-wrapper">
+      <aside class="collapsible-menu">
+        <button type="button"><i class="fa-solid fa-bars"></i></button>
+        <!-- <nav id="primaryNav">
+                  <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/">Shorts</a></li>
+                    <li><a href="/">Subscriptions</a></li>
+                    <li><a href="/">Library</a></li>
+                    <li><a href="/">History</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact-us.html">Contact</a></li>
+                  </ul>
+                </nav> -->
+      </aside>
+      <div class="main-header">
+        <a href="./index.html" class="logo-link">
+          <img src="./assets/images/youtube-logo.png" alt="YouTube Logo" width="48"></a>
+        <div class="controls-bar">
+          <input type="search" class="search-input" placeholder="Search" aria-label="Enter Search Query">
+          <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button type="button">Mic</button>
+          <button type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <button type="button">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contact us Page!</h1>
+
+    <div>
+      <section>
+        <h2>Locate us here - Left side 70%</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497780.70384712645!2d79.8154287418101!3d12.913393400000034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c6f13fca667%3A0x84dfc419b2e83941!2sCognizant%20Technology%20Solutions!5e0!3m2!1sen!2sin!4v1670390499686!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section>
+        <h2>Reach us here - Ride Side 30%</h2>
+        <address>
+          <h4>Cognizant Technology Solutions</h4>
+          W64F+PG2 ELCOT SEZ, <br>
+          Elcot Sez, SEZ Ave, Elcot Sez, <br>
+          Sholinganallur, Chennai,
+          Tamil Nadu 600119 <br>
+          <p>Phone: 2443453434</p>
+          <p>E-Mail: <a href="mailto:contact@cognizant.com">contact@cognizant.com</a></p>
+        </address>
+      </section>
+    </div>
+
+    <section>
+      <h2>Contact us by filling the form</h2>
+      <form class="contact-form">
+        <div class="field-group">
+          <label for="nameInput">Enter Name:</label>
+          <input id="nameInput" 
+            type="text" 
+            name="fullName" 
+            placeholder="Enter Your Name" 
+            required
+            aria-required="true">
+        </div>
+        <div class="field-group">
+          <label for="emailInput">Enter E-Mail:</label>
+          <input id="emailInput" 
+            type="email" 
+            name="email" 
+            placeholder="Enter Your Email"
+            required
+            aria-required="true">
+        </div>
+        <div class="field-group">
+          <label for="phoneInput">Enter Phone:</label> 
+          <input id="phoneInput" 
+            type="tel" 
+            name="phone" 
+            placeholder="Enter Your Phone"
+            required
+            aria-required="true">
+        </div>
+        <div class="field-group">
+          <label for="queryInput" class="query-label">Enter Query:</label>
+          <textarea 
+            id="queryInput"
+            rows="5" 
+            cols="20" 
+            name="query" 
+            placeholder="Enter Your Query (max 250)" 
+            required
+            aria-required="true"></textarea>
+        </div>
+        <div class="field-group">
+          <button type="submit">Send Query</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center">
+    <nav id="footerNav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact-us.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p>Copyright &copy; 2022 | Arun</p>
+  </footer>
+</body>
+
+</html>

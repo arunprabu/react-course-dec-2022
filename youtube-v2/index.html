@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  Will not be visible in browser's view port -->
+    <meta name="description"
+      content="Welcome to YouTube V1 Home Page. The best video platform. Browse through all videos for free">
+    <meta name="keywords" content="movie video, youtube music, live stream games, sports videos, sports highlights ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Welcome to YouTube V1
+    </title>
+
+    <!-- Linking Normalize.css External Styles -->
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Linking Custom External Styles -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <!-- Internal Styles -->
+    <style>
+      /* Load external styles first. here you can override external styles */
+      /* Element Selector */
+      h2 {
+        /* Style defn */
+        color: green;
+        background-color: blanchedalmond;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- will be visible in browser's view port -->
+    <header>
+      <div class="header-wrapper">
+        <aside class="collapsible-menu">
+          <button type="button"><i class="fa-solid fa-bars"></i></button>
+          <!-- <nav id="primaryNav">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/">Shorts</a></li>
+              <li><a href="/">Subscriptions</a></li>
+              <li><a href="/">Library</a></li>
+              <li><a href="/">History</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact-us.html">Contact</a></li>
+            </ul>
+          </nav> -->
+        </aside>
+        <div class="main-header">
+          <a 
+            href="./index.html" class="logo-link">
+            <img 
+              src="./assets/images/youtube-logo.png" 
+              alt="YouTube Logo"
+              width="48"></a>
+          <div class="controls-bar">
+            <input type="search" class="search-input" placeholder="Search" aria-label="Enter Search Query">
+            <button type="button" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button type="button">Mic</button>
+            <button type="button" aria-label="More Menus"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            <button type="button">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <!-- only one main tag you should in a page -->
+      <div id="suggestedTopics" class="text-center">
+        <ul>
+          <li><a href="/">Cricket</a></li>
+          <li><a href="/">Football</a></li>
+          <li><a href="/">FIFA Updates</a></li>
+          <li><a href="/">Best Goals</a></li>
+          <li><a href="/">Movies</a></li>
+          <li><a href="/">Latest News</a></li>
+          <li><a href="/">Recession</a></li>
+          <li><a href="/">Cars</a></li>
+          <li><a href="/">RC Cars</a></li>
+          <li><a href="/">Electric Cars</a></li>
+          <li><a href="/">Science</a></li>
+          <li><a href="/">Courses</a></li>    
+          <li><a href="/">Movies</a></li>
+          <li><a href="/">Latest News</a></li>
+          <li><a href="/">Recession</a></li>
+          <li><a href="/">Cars</a></li>
+          <li><a href="/">RC Cars</a></li>
+          <li><a href="/">Electric Cars</a></li>
+          <li><a href="/">Science</a></li>
+          <li><a href="/">Courses</a></li>
+        </ul>
+      </div>
+
+      <div class="red hero-container"> 
+        <div class="green hero-image">
+          <img 
+            src="./assets/images/latest-albums.png"
+            alt="Listen to All Latest Releases"
+            width="300"
+            height="200">
+        </div>
+        <section class="hero-content red">
+          <!-- Inline Styles -->
+          <h1 style="color: #000;">Music Released this Week</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere optio minus accusamus perspiciatis.</p>
+          <button type="button">Listen Now</button>
+        </section>
+      </div>
+
+      <section class="recommended-videos">
+        <h2>Recommended Videos</h2>
+        
+        <!-- Video box #1 starts here-->
+        <div>
+          <img src="./assets/images/france-vs-poland.png"
+            alt="France Vs Poland">
+          <div>
+            <img src="./assets/images/channel-profile-1.png" alt="Channel No 1">
+            <div>
+              <h3>
+                <a href="/watch.html">France vs Poland - Highlights</a>
+              </h3>
+              <h4>
+                <a href="/">Channel No 1</a>
+              </h4>
+              <span>3.5M Views</span>
+              <span>18 hours ago</span>
+            </div>
+          </div>
+        </div>
+        <!-- Video box #1 ends here-->
+
+        <!-- Video box #2 starts here-->
+        <div>
+          <img src="./assets/images/football-eng-vs-senegal.png" alt="England Vs Senegal">
+          <div>
+            <img src="./assets/images/channel-profile-1.png" alt="Channel No 1">
+            <div>
+              <h3>
+                <a href="/watch.html">England Vs Senegal - Highlights</a>
+              </h3>
+              <h4>
+                <a href="/">Channel No 1</a>
+              </h4>
+              <span>3M Views</span>
+              <span>14 hours ago</span>
+            </div>
+          </div>
+        </div>
+        <!-- Video box #2 ends here-->
+
+        <!-- Video box #3 starts here-->
+        <div>
+          <img src="./assets/images/japan-vs-croatia.png" alt="Japan vs Croatia">
+          <div>
+            <img src="./assets/images/channel-profile-1.png" alt="Channel No 1">
+            <div>
+              <h3>
+                <a href="/watch.html">Japan vs Croatia - Highlights</a>
+              </h3>
+              <h4>
+                <a href="/">Channel No 1</a>
+              </h4>
+              <span>2M Views</span>
+              <span>10 hours ago</span>
+            </div>
+          </div>
+        </div>
+        <!-- Video box #3 ends here-->
+
+        <!-- Video box #4 starts here-->
+        <div>
+          <img src="./assets/images/brazil-vs-south-korea.png" alt="Brazil vs South Korea">
+          <div>
+            <img src="./assets/images/channel-profile-1.png" alt="Channel No 1">
+            <div>
+              <h3>
+                <a href="/watch.html">Brazil vs South Korea - Highlights</a>
+              </h3>
+              <h4>
+                <a href="/">Channel No 1</a>
+              </h4>
+              <span>1.5M Views</span>
+              <span>7 hours ago</span>
+            </div>
+          </div>
+        </div>
+        <!-- Video box #4 ends here-->
+      </section>
+    </main>
+    
+    <footer class="text-center">
+      <nav id="footerNav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &copy; 2022 | Arun</p>
+    </footer>    
+  </body>
+</html>

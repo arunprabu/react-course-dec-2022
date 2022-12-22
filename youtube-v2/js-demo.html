@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Demo</title>
+
+  <!-- External JavaScript -->
+  <script src="./assets/scripts/main.js"></script>
+  <script>
+    /* event handler fn */
+    function handleClickMe(event) {
+      console.log(event); // event object - where the event occured, what type of event, the target element
+      event.target.innerText = 'Clicked';
+      // TODO: disable the button on click
+    }
+  </script>
+</head>
+<body>
+  <h1 class="main-heading">JS Demo</h1>
+  
+  <h2>Handling Interactions using JS & DOM Manipulation | Demo</h2>
+
+  <!-- Internal JavaScript -->
+  <button onclick="handleClickMe(event)">Click Me</button>
+  <button onmouseover="handleMouseover()">Mouseover here pls</button>
+  <hr>
+
+  <div id="myDiv">
+    Welcome to DOM Manipulation
+  </div>
+  <button 
+    onclick="handleChangeBgColor()">
+    Change Bg Color
+  </button>
+  <button>Change Text Color to White</button>
+  <button>Make the Text Bolder</button>
+
+  <hr>
+  <button>What's the Time now? - Refer: new Date()</button>
+  <div>
+    <p>Time is: </p>
+    <p id="timeWrapper"></p>
+  </div>
+
+  <hr>
+  <button>Generate a Random Number of 1 Digit - Refer: Math.random()</button>
+  <div>
+    <p>Random Number Generated is</p>
+    <p id="randomNumber"></p>
+  </div>
+
+  <hr>
+  <input type="text" placeholder="Enter Skill" id="skillInput">
+  <button >Add New Skill</button>
+  <ul id="skills">
+    <li>HTML</li>
+    <!-- TODO: Learn about creating li and adding inner text and appending it within ul element using js -->
+  </ul>
+
+</body>
+</html>

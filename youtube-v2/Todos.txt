@@ -1,0 +1,30 @@
+1. Experiment with audio tag in about.html 
+2. Create HTML Form in contact-us.html with 4 Fields, Name, Email, Phone, Query with Reset and Submit button 
+3. Create a New Page 'tables-demo.html' 
+4. Add font-awesome icon for mic and signin 
+5. style sign in button like that of in YouTube website   
+6. Learn about CSS Specificity 
+    [Ref: https://www.w3schools.com/css/css_specificity.asp
+     Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity ]
+7. Style the footer with 'nav' center aligned and menus in one line + have top border for footer
+8. Style the hero section of home page
+9. Style the recommended videos section with display grid properly. 
+10. Make the header fixed on all pages 
+11. Complete watch.html 
+12. complete contact-us.html 
+13. complete about.html 
+14. write responsive css for home, watch pages 
+15. Learn about keyframe in css (Self-Study)
+16. Fix all accessibility issues in home, watch and contact pages (use the tool: Wave)
+    Refer: https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh
+
+
+
+JS TODOS 
+===
+1. write a function calc. receive three arguments namely 'operation', 'num1', 'num2'. 
+    based on the 'operation' return the calculated output 
+    possible 'operation' can be 'ADD', 'SUBTRACT', 'MULTIPLY', 'DIVIDE' 
+2.  in js-demo.html, disable the button on click
+3.  Save Pincode in LocalStorage, Display it on load, Delete it from LocalStorage in html5-js-api-demo.html 
+4.  
