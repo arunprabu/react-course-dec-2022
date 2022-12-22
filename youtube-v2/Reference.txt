@@ -356,7 +356,7 @@ JS
       let 
       const 
 
-      
+
 
     
 
@@ -372,6 +372,54 @@ Web Storage / Storage
   1. LocalStorage 
   2. SessionStorage 
 
+
+
+file1.js 
+---
+  export const feature = 'Addition'; // named export 
+  export function add(a, b){ // named export 
+    return a + b;
+  }
+
+file2.js 
+--
+  export const y = 20; //named export 
+  export const z = 30; //named export 
+  export default function multiply(a, b){ // default export 
+    return a * b;
+  }
+
+file3.js 
+---
+  export const i = 10;
+  export const j = 20; 
+  export function divide() {
+
+  }
+
+file4.js 
+---
+  var msg = 'success'; 
+  var error = null; 
+
+  function getData() {
+    ...
+  }
+  getData();
+
+===
+main.js 
+---
+  import { add } from './file1.js'; // named import 
+  import multiply, { y } from './file2.js'; // default and named imports 
+  import * as count from './file3.js'; // Namespace import
+  import './file4.js'; // Side effect import
+
+add(10, 20);
+multiply(10, 20);
+
+console.log(count.i); //10
+console.log(count.j); //20
 
 
 
