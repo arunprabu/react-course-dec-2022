@@ -90,3 +90,34 @@ function handleContactFormSubmit(event){
   xhttp.send(formData);
 
 }
+
+
+
+// Webworker Demo 
+const first = document.querySelector('#number1');
+const second = document.querySelector('#number2');
+const result = document.querySelector('.result');
+
+if (window.Worker) {
+  console.log('Loading calc-worker.js');
+  // loading a JS file in the background
+  const calcWorker = new Worker("./assets/scripts/calc-worker.js");
+  
+  first.onchange = function () {
+    calcWorker.postMessage([first.value, second.value]);
+    console.log('Message posted to worker');
+  }
+
+  second.onchange = function () {
+    calcWorker.postMessage([first.value, second.value]);
+    console.log('Message posted to worker');
+  }
+
+  // we are receiving the multiplied output sent by calc-worker.js 
+  calcWorker.onmessage = function(event) {
+    console.log(event.data);
+    result.innerText = event.data;
+  }
+} else {
+  console.log('Your browser doesn\'t support web workers.');
+}
