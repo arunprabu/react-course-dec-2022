@@ -91,8 +91,6 @@ function handleContactFormSubmit(event){
 
 }
 
-
-
 // Webworker Demo 
 const first = document.querySelector('#number1');
 const second = document.querySelector('#number2');
@@ -121,3 +119,41 @@ if (window.Worker) {
 } else {
   console.log('Your browser doesn\'t support web workers.');
 }
+
+/* === Web worker ended === */
+
+/* Custom Elements Demo */
+// create a class for the custom element 
+// Let's create autonomous custom element 
+class PopUpInfo extends HTMLElement {
+  constructor() {
+    // always call super in constructor 
+    super();
+
+    // create a shadow root -- inside this all following elements will be appended 
+    const shadow = this.attachShadow({mode: 'open'});
+
+    // create span element
+    const span = document.createElement('span'); // <span></span>
+    span.setAttribute('class', 'wrapper'); // <span class='wrapper'></span>
+
+    // reading texts from attributes of this custom element 'popup-info' 
+    const text = this.getAttribute('data-msg');
+    span.textContent = text;
+
+    // let's add the relevant css stuff 
+    const style = document.createElement('style'); // <style></style>
+    style.textContent = `
+      .wrapper {
+        position: relative;
+        color: red;
+      }
+    `;
+
+    shadow.appendChild(style);
+    shadow.appendChild(span);
+  }
+}
+
+// expose the class as custom element -- using customElements.define()
+customElements.define('popup-info', PopUpInfo);
