@@ -105,7 +105,7 @@ if (window.Worker) {
     calcWorker.postMessage([first.value, second.value]);
     console.log('Message posted to worker');
   }
-
+  
   second.onchange = function () {
     calcWorker.postMessage([first.value, second.value]);
     console.log('Message posted to worker');

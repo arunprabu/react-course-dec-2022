@@ -1,0 +1,225 @@
+TypeScript 
+--
+  TS = JS + DataTyping 
+  * TS is a superset of JavaScript 
+  * One of the Compiled-to-JavaScript languages
+
+  Tooling
+  ====
+    TS => (TypeScript Compiler) => JS 
+
+
+  Primitive Datatypes in JS : 
+  ---
+    string, number, boolean, undefined, null, symbol (es2015), big int (es2017)
+
+  Reference Types: 
+  --
+    arrays, objects, RegEx 
+
+  ---
+
+  Types of Languages (based on datatypes)
+    1. Strictly-Typed Languages 
+        Examples: Java, C#, C, C++, TypeScript 
+
+        Syntax in Java:
+        ---
+          String myName = 'Arun'; 
+          myName = 'John'; // valid 
+          myName = 100; // error 
+
+    2. Loosely-Typed Languages 
+        Examples: JavaScript, Python, PHP 
+
+        Syntax in JS 
+        --
+          var myName = 'Arun'; 
+          myName = 'John'; //valid
+          myName = true; //valid
+          myName = 100; //valid
+          myName = undefined; //valid
+          myName = null; //valid
+          myName = []; //valid
+          myName = {}; //valid
+          myName = function() { // valid 
+
+          }
+
+
+
+----------------
+  Syntax in TS 
+  =========
+
+  Two types of Datatyping
+  -------------
+    1. Explicitly-Typed 
+      var myName: string  = 'Arun'; 
+      myName = 'John'; // valid 
+      myName = 10; // error 
+
+      var age: number = 10; 
+      var isLoggedIn: boolean = true;
+      var u: undefined;
+      var n: null = null; 
+
+      var colors: string[] = ['red', 'green', 'blue'];
+      var colorList: Array<string> = ['red', 'green', 'blue'];
+
+      var profile: {} = {
+        name: 'John',
+        age: 20
+      }
+
+    2. Implicitly-Typed 
+        var x = 10; // valid
+        x = 100; //  valid 
+        x = true; // error 
+
+---
+  var y;
+  y = 10; // valid
+  y = true; // valid
+
+----
+  var z: any; 
+  z = true; // valid 
+  z = 'Arun'; // valid 
+  
+---
+
+----
+// Tuple -- data structure consisting of multiple parts 
+let myArr: [string, number] = ['red', 234234];
+myArr = ['green', 785976897 ];
+
+
+// enums are restricted to hold only numbers 
+---
+// preferred to have constants
+enum myErrorCodes {
+    pageNotFound = 404,
+    invalidRequest = 999,
+    success = 200,
+    unauthorized = 301,
+    invalidUserName = 1001
+}
+
+console.log(myErrorCodes.unauthorized);
+
+//another example
+enum ErrorCode {
+  INVALID_USERNAME =  1001,
+  INVALID_PASSWORD =  1002,
+  ACCOUNT_DISABLED // this will have the value 1003
+}
+
+console.log("Error Occured. " + ErrorCode.INVALID_USERNAME +  ": Login Failed");
+
+================
+// object with implicit type 
+let profile = {
+    name: 'Arun',
+    role: 'Trainer',
+    skills: ['JS', 'React', 'Angular', 'Vue']
+}
+
+// profile = {
+//     exp: 17 // Error 
+// }
+
+// profile.exp = 17;  // Error
+
+profile.name = 'John'; //will work 
+profile.role = 'Consultant'; // will work 
+
+====
+// Obj with Explicit Typing 
+let profile: { name: string, role: string } = {
+    name: 'Ronaldo',
+    role: 'forward'
+}
+
+profile.name = 'Messi';
+
+=================
+    
+Functions in TS 
+===
+
+  function add(a: number, b: number ): number{
+    return a + b;
+  }
+
+  add(10, 20);
+
+
+============
+Function Type Expressions
+---
+  TS variant 
+  ---- 
+      function calc(fn: () => void) {
+        fn();
+      }
+      
+      function add() {
+        console.log('inside myFn');
+      }
+      
+      calc(add);
+
+  Equivalent JS version
+  ----
+    function calc(fn) {
+      fn();
+    }
+    function add() {
+        console.log('inside myFn');
+    }
+    calc(add);
+
+
+==========================
+
+Generics  (Ref: https://www.tutorialsteacher.com/typescript/typescript-generic)
+===
+
+  function getArray<T>(items : T[]) : T[] {
+      return new Array().concat(items);
+  }
+
+  let myNumArr = getArray<number>([100, 200, 300]);
+  myNumArr.push(400); 
+  console.log(myNumArr);
+
+  let myStrArr = getArray<string>(["Hello", "World"]);
+  myStrArr.push("Hello TypeScript"); 
+  console.log(myStrArr);
+
+================================
+
+// custom type . aka type aliases 
+type Profile = { 
+  name: string, 
+  zipcode: number, 
+  skills: string[], 
+  hasExperience: boolean 
+}; 
+
+let exampleObj1: Profile   = {
+  name: "Arun",
+  zipcode: 600041,
+  skills: ["Angular", "Node"],
+  hasExperience: true,
+}
+
+let exampleObj2: Profile   = {
+  name: "Steve",
+  zipcode: 600041,
+  skills: ["React", "Vue"],
+  hasExperience: true,
+}
+
+==========
