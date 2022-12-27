@@ -425,11 +425,95 @@ console.log(count.j); //20
 
 
 
-
-
-
-
+Websites 
+---
+  
 
 Webapps 
 --
+  1. Server Side Rendering Apps (SSR Apps / Traditional Webapps) 
+      * Pages will refresh/reload when we click the links 
+      Example: nodejs.org 
 
+      Arch
+      ----- 
+        1 Server 
+        Response: HTML, CSS, JS + Data
+
+      Technology / Codebase
+      -----
+        Front End Code (HTML, CSS, JS) + Back End Code (Java/DotNet/PHP/Python/Ruby/NodeJS) + DB (Oracle/MySQL)
+
+      Advantages
+      -----
+        1. Search Engine Friendly 
+        2. Initial Loading Time will not be longer
+
+      Disadvantages 
+      ----- 
+        1. Server has to do the heavy-lifting 
+        2. Pages will refresh/reload 
+        3. Slower Webapps 
+        4. Higher Bandwidth Consumption 
+        5. Expensive 
+        6. User Experience 
+
+
+  2. Client Side Rendering Apps (CSR Apps) = SPA + RESTful API 
+      * Pages will NOT REFRESH/RELOAD when we click the links 
+      Example: espncricinfo.com
+
+      Arch
+      ----- 
+        2 Servers 
+          1 Front End Server 
+            Response: HTML + CSS + JS + (Placeholders for Data) 
+
+          1 Back End Server 
+            Response: Data (JSON)
+
+      Technology / Codebase 
+      -----
+        Front End App a.k.a Single Page Apps (SPA)
+          Codebase: HTML, CSS, JS 
+          Response: HTML + CSS + JS + (Placeholders for Data) 
+
+        Back End App a.k.a RESTful API 
+          Codebase: Java/DotNet/PHP/Python/Ruby/NodeJS + DB (Oracle/MySQL)
+          Response: Data (JSON)
+
+      Advantages
+      -----
+        1. Server's workload is shared.
+        2. Pages will not refresh/reload 
+        3. Faster Webapps 
+        4. Lesser Bandwidth Consumption 
+        5. Not Expensive
+        6. User Experience is good. 
+
+      Disadvantages 
+      ----- 
+        1. Not Search Engine Friendly (fixable)
+        2. Initial Loading Time will be longer (fixable)
+
+--------------------------------------------------------
+
+Single Page App (SPA)
+------
+  Characteristics 
+  ------
+    1. Page should not reload/refresh 
+    2. URL should change
+    3. History should be maintained without page refresh 
+    4. Header and Footer should be intact 
+    5. The section in between header and footer should show contextual update 
+    6. Active Menu should be set 
+    7. Page Title should also be changed 
+
+  SPA Frameworks / Libraries 
+  -----
+    1. React JS (library)
+    2. VueJs (Framework)
+    3. Angular (Framework)
+  
+==============

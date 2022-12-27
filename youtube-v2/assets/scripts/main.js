@@ -88,7 +88,6 @@ function handleContactFormSubmit(event){
   console.log('Before sending');
   xhttp.open('POST', 'https://jsonplaceholder.typicode.com/users');
   xhttp.send(formData);
-
 }
 
 // Webworker Demo 
