@@ -17,3 +17,30 @@ npm i dropzone
       npm i typescript -D 
 
       npm i sass -D 
+
+====
+Naming Conventions
+---
+    PascalCase
+    --------
+        * Folder of Components, File names and Component Names 
+
+
+Components 
+---
+  1. Functional Components 
+      * coded with functions 
+      * were called as Presentational Components, Dumb Components (before 2019) 
+      * were called as Stateless Components (before 2019) 
+
+      1.1. Functional Component with Named Function
+      1.2. Functional Component with Anonymous Function
+      1.3. Functional Component with Arrow Function 
+
+  2. Class Components 
+      * coded as classes 
+      * a.k.a Containers, Smart Components, Stateful Components 
+
+
+
+
