@@ -1,0 +1,19 @@
+npm i react 
+npm i dropzone 
+
+2 Types of NPM Dependencies 
+-------
+  1. Project Dependencies
+      * packages are needed for the functionality of the project to work
+
+      npm i react 
+      npm i dropzone 
+      npm i bootstrap 
+
+  2. Development Dependencies
+      * packages are needed for the project to be developed 
+
+      npm i typescript --save-dev 
+      npm i typescript -D 
+
+      npm i sass -D 

@@ -153,6 +153,7 @@ Naming Conventions
         * recommended for urls 
         * recommended for file names, folder names, assets in front end projects 
         * okay for id's of html elements if your architect accepts
+        * names of all front end projects  
 
         Examples:
         --
@@ -513,7 +514,9 @@ Single Page App (SPA)
   SPA Frameworks / Libraries 
   -----
     1. React JS (library)
+        Prereq: Basic JS, ES2015, 2017, 2018
     2. VueJs (Framework)
     3. Angular (Framework)
   
 ==============
+
