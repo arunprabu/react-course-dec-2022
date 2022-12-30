@@ -1,0 +1,2 @@
+1. Learn about linking bootstrap in react project and implement it 
+

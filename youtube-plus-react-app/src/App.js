@@ -7,14 +7,19 @@
 
 import './App.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import HomePage from './pages/HomePage/HomePage';
 
 // comp defn 
 function App() {
   // must return JSX
-  return(
+  return (
     <div>
       <Header></Header>
-      <h1>Success</h1>
+      <main className='container mt-5 pt-3'>
+        <HomePage />
+      </main>
+      <Footer />
     </div>
   )
 }
