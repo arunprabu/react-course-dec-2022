@@ -31,7 +31,7 @@ Components
 1. Functional Components 
 		* coded with functions 
 		* were called as Presentational Components, Dumb Components (before 2019) 
-		* were called as Stateless Components (before 2019) 
+		* were called as Stateless Components (before 2019 - till react v 16.8) 
 
 		1.1. Functional Component with Named Function [DONE]
 		1.2. Functional Component with Anonymous Function [DONE]
@@ -93,7 +93,7 @@ The top level directory structure will be as follows:
 	services - JavaScript modules
 	store - Global Redux store
 	utils - Utilities, helpers, constants, and the like
-	views - Can also be called "pages", the majority of the app would be contained here
+	pages - Can also be called "views", the majority of the app would be contained here
 
 --
 src/
@@ -123,3 +123,18 @@ localhost:3001/contact   -- ContactPage
 localhost:3001/dashboard   -- DashboardPage 
 localhost:3001/users        -- UsersPage 
 localhost:3001/users/add    -- AddUser
+
+
+Cross Component Communication
+---
+	1. Parent to Child Component Communication [DONE]
+			Using Props 
+
+	2. Child to Parent Component Communication 
+			Using Props, Events, Render Props 
+
+	3. Any to Any Component Communication 
+			3.1 Using React Hooks (Context API)
+			3.2 Using ReduxJS / Flux / MobX 
+
+----

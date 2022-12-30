@@ -3,12 +3,14 @@ import React from 'react';
 import MenuList from '../MenuList/MenuList';
 
 const Footer = function () {
+  const copyrightYear = 2023;
+
   // return JSX 
   return (
     <footer className='text-center'>
       <hr />
       <MenuList />
-      <p>Copyright 2022 | Arun</p>
+      <p>Copyright {copyrightYear} | Arun</p>
     </footer>
   )
 }
