@@ -1,2 +1,4 @@
 1. Learn about linking bootstrap in react project and implement it 
-
+2. Create TrendingVideo component to avoid code duplicate in TrendingVideoList comp 
+    and pass the state data into TrendingVideo comp and render the UI 
+  
