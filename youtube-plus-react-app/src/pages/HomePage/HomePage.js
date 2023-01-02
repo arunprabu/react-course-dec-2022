@@ -1,3 +1,4 @@
+import RecommendedVideoList from "../../containers/RecommendedVideoList/RecommendedVideoList";
 import TrendingVideoList from "../../containers/TrendingVideoList/TrendingVideoList";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import LatestVideo from "./LatestVideo/LatestVideo";
@@ -58,6 +59,11 @@ const HomePage = () => {
       <hr />
       <h2>Trending Videos | Class Comp, States, Events, Props Demo</h2>
       <TrendingVideoList />
+
+      <hr />
+      <h2>Recommended Videos | Class Comp, States, Events, Conditional Rendering, Lists &  Keys, Updating State Immutably Demo</h2>
+      <RecommendedVideoList />
+
     </div>
   );
 }

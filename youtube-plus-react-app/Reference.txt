@@ -70,11 +70,12 @@ Limitations of JSX
 
 Concepts
 --
-	Props 
+	Props [DONE]
 	States 
 	Events 
 
 	Lists and Keys 
+
 	Styles 
 
 	Hooks 
@@ -138,3 +139,19 @@ Cross Component Communication
 			3.2 Using ReduxJS / Flux / MobX 
 
 ----
+
+Git 
+--
+  * Distributed version control 
+  examples: github.com, bitbucket.com, gitlab.com 
+  git clients
+  --
+    Command Line tools / CLI:
+    --- 
+      git-scm 
+    
+    GUI Based:
+    ---
+      github for Desktop 
+      Source Tree 
+      Tower 
