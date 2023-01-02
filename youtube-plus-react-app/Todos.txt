@@ -2,3 +2,4 @@
 2. Create TrendingVideo component to avoid code duplicate in TrendingVideoList comp 
     and pass the state data into TrendingVideo comp and render the UI 
   
+3. 

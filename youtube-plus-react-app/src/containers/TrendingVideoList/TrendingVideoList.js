@@ -31,15 +31,32 @@ class TrendingVideoList extends Component{
       }
     ]
   }
+
+  // event handler method 
+  handleSwitchResolution = () => { // within arrow fn -- this keyword will be available
+    console.log('Clicked');
+    console.log(this);
+    // this.state.videoResolution = '8K'; // Do not mutate state directly. Use setState().
+    this.setState( {
+      videoResolution: '8K'
+    });
+    // whenever setState is called -- render() will be executed
+    // setState will smartly merge the change with existing properties
+  }
   
   // must have render method 
   render() {
     console.log('Inside Render');
+    console.log(this.state.videoResolution);
     // must return JSX 
     return(
       <div className="row">
-        <p>Enjoy the trending videos in stunning {this.state.videoResolution} Resolution</p>
-        
+        <p>
+          Enjoy the trending videos in stunning {this.state.videoResolution} Resolution | 
+          <button className="btn btn-primary ms-2" 
+            onClick={this.handleSwitchResolution}>Switch to 8K</button>
+        </p>
+
         <div className="col-md-3">
           <div className="card">
             <img
@@ -79,8 +96,6 @@ class TrendingVideoList extends Component{
             </ul>
           </div>
         </div>
-
-        
 
       </div>
     )

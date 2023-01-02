@@ -6,6 +6,8 @@ const LatestVideo = ({ thumbnailUrl, title, channel, views, publishedDate, child
   // props are read-only 
   // props can have children
   // props are used for receiving data from parent comp
+
+  console.log('Is it re-rendered?');
   
   return (
     <div className="card">
