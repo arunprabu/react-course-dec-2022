@@ -56,7 +56,7 @@ const HomePage = () => {
       </div>
 
       <hr />
-      <h2>Trending Videos | Class Comp, States, Events Demo</h2>
+      <h2>Trending Videos | Class Comp, States, Events, Props Demo</h2>
       <TrendingVideoList />
     </div>
   );
