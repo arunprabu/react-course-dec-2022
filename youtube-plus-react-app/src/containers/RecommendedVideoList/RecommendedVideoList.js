@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import RecommendedVideo from './RecommendedVideo/RecommendedVideo';
 
 class RecommendedVideoList extends Component {
 
@@ -52,12 +53,12 @@ class RecommendedVideoList extends Component {
   }
 
   // add the event handler
-  handleAddToWatchlist(index) {
+  handleAddToWatchlist = (index) => {
     console.log(this);
     console.log(index);
 
-    // working with state immutably
-    let duplicateVideos = [ ...this.state.videos];
+    // // working with state immutably
+    let duplicateVideos = [...this.state.videos];
     duplicateVideos[index].isInWatchlist = !duplicateVideos[index].isInWatchlist;
     console.log(duplicateVideos);
     this.setState({
@@ -66,6 +67,7 @@ class RecommendedVideoList extends Component {
   }
 
   render() {
+    // NEVER EVENT USE setState here
 
     // conditional rendering
     if(!Array.isArray(this.state.videos) || this.state.videos.length === 0) {
@@ -82,35 +84,14 @@ class RecommendedVideoList extends Component {
     let videoList = null;
     if(Array.isArray(this.state.videos) && this.state.videos.length > 0) {
       videoList = this.state.videos.map( ( video, index) => {
-        console.log(video);
+        //console.log(video);
         return(
-          <div className='col-md-3' key={video.id}>
-            <div className="card">
-              <img
-                src={video.thumbnailUrl}
-                className="card-img-top" alt={video.title} />
-              <div className="card-body">
-                <a href="/" className="card-link">
-                  <h5 className="card-title">
-                    {video.title}
-                  </h5>
-                </a>
-                <p>{video.description}</p>
-              </div>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">{video.channel}</li>
-                <li className="list-group-item">{video.views} Views | {video.publishedDate}</li>
-                <li className="list-group-item">
-                  <button type='button' 
-                    className='btn btn-success btn-sm'
-                    onClick={this.handleAddToWatchlist.bind(this, index)}>
-                    { /* conditional rendering */ }
-                    { video.isInWatchlist? 'In Watchlist' : 'Add to Watchlist' }
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <RecommendedVideo 
+            {...video}
+            index={index}
+            handleAddToWatchlist={this.handleAddToWatchlist}
+            key={video.id}
+            ></RecommendedVideo>
         )
       });
     }
