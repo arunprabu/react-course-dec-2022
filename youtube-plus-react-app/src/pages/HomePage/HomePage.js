@@ -90,8 +90,8 @@ const HomePage = () => {
 
       <hr/>
       <h2>Styled Components Demo</h2>
-      <StyledComponentDemo />
-      
+      {/* <StyledComponentDemo /> */}
+
     </div>
   );
 }
