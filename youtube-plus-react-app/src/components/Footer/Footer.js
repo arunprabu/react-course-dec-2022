@@ -1,5 +1,6 @@
 // Functional Component with Anonymous Function
 import React from 'react';
+import './Footer.css';
 import MenuList from '../MenuList/MenuList';
 
 const Footer = function () {
@@ -7,12 +8,14 @@ const Footer = function () {
 
   // return JSX 
   return (
-    <footer className='text-center'>
+    <footer className="text-center">
       <hr />
       <MenuList />
-      <p>Copyright {copyrightYear} | Arun</p>
+      <p className="red-text green-text footer-purple-text">
+        Copyright {copyrightYear} | Arun
+      </p>
     </footer>
-  )
+  );
 }
 
 export default Footer;

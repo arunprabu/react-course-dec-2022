@@ -1,0 +1,8 @@
+/* 
+  * comp-wide css 
+  * will be available to all the descendents of App Comp 
+*/
+
+.green-text {
+  color: green;
+}

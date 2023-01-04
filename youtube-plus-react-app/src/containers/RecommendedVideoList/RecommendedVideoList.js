@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RecommendedVideo from "./RecommendedVideo/RecommendedVideo";
+import RecommendedVideo from "../../pages/HomePage/RecommendedVideo/RecommendedVideo";
 
 class RecommendedVideoList extends Component {
   constructor() {

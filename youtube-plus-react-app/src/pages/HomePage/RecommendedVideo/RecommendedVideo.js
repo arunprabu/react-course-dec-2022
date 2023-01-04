@@ -14,7 +14,9 @@ const RecommendedVideo = (props) => {
           <a href="/" className="card-link">
             <h5 className="card-title">{props.title}</h5>
           </a>
-          <p>{props.description}</p>
+          <p>
+            {props.description}
+          </p>
         </div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">{props.channel}</li>

@@ -1,0 +1,9 @@
+/* 
+  global css for the whole app 
+  ideal place for you to override bootstrap styles
+  ideal place for your own theme
+*/
+
+.red-text {
+  color: red;
+}

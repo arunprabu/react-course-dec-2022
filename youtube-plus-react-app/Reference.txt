@@ -40,6 +40,7 @@ Components
 2. Class Components 
 		* coded as classes 
 		* a.k.a Containers, Smart Components, Stateful Components 
+		* will have life cycle hooks 
 
 Project Structure
 ---
@@ -67,24 +68,49 @@ Limitations of JSX
 	2. href should be with valid value 
 	3. JSX expressions must have one parent element.
 	4. class should become className 
+	5. style should have mapping to obj -- not string 
 
 Concepts
 --
 	Props [DONE]
-	States 
-	Events 
-
-	Lists and Keys 
+	States [DONE]
+	Events [DONE]
+	conditional rendering [DONE]
+	Lists and Keys [DONE ]
+	Two Way Binding [DONE]
+	
+	Class Components [DONE]
+	LifeCycle Hooks [DONE]
 
 	Styles 
+		1. Inline 
+		2. Internal
+		3. External 
+	SASS 
+	Styled Components 
+
+	ESLint and Prettier Setup
+
+	Render Props
+	HOC
+	Error Boundaries
+	StrictMode 
+	Fragments 
+	
+	Typechecking With PropTypes
 
 	Hooks 
-
-	Class Components 
-	LifeCycle Hooks 
-
 	Forms
+	Uncontrolled Components
 
+	REST API Calls 
+	Routing 
+	Unit Testing 
+	Env Variables [Self-learn]
+	Build and Deployment 
+	Code splitting
+	Lazy Loading 
+	
 ----
 
 The top level directory structure will be as follows:
@@ -155,3 +181,14 @@ Git
       github for Desktop 
       Source Tree 
       Tower 
+
+------
+
+Data Binding 
+--
+  1. One Way Binding 
+      ---
+      JS => JSX 
+
+  2. Two Way Binding 
+      JS <=> JSX 

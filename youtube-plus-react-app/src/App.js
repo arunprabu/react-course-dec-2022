@@ -16,12 +16,13 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <main className='container mt-5 pt-3'>
+      <main className="container mt-5 pt-3">
         <HomePage />
       </main>
       <Footer />
+      <p className="green-text">Built during Training</p>
     </div>
-  )
+  );
 }
 
 export default App;

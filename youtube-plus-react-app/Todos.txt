@@ -1,5 +1,9 @@
 1. Learn about linking bootstrap in react project and implement it 
 2. Create TrendingVideo component to avoid code duplicate in TrendingVideoList comp 
     and pass the state data into TrendingVideo comp and render the UI 
-  
-3. 
+3. Integrate SCSS in create-react-app project 
+    Adding Sass style file
+    Setup Sass
+4. Styled Components  [Self-learn]
+5. PropTypes [Self-learn]
+    Implement PropTypes in all possible components 

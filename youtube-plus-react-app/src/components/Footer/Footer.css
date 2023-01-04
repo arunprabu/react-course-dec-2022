@@ -1,0 +1,8 @@
+/*
+  * comp-wide css
+  * will be available to all the descendents of Footer Comp
+*/
+
+.footer-purple-text {
+  color: purple;
+}
