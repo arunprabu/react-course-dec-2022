@@ -20,7 +20,6 @@ function App() {
         <HomePage />
       </main>
       <Footer />
-      <p className="green-text">Built during Training</p>
     </div>
   );
 }

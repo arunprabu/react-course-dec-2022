@@ -28,7 +28,7 @@ Naming Conventions
 
 Components 
 ---
-1. Functional Components 
+1. Functional Components [ RECOMMENDED ]
 		* coded with functions 
 		* were called as Presentational Components, Dumb Components (before 2019) 
 		* were called as Stateless Components (before 2019 - till react v 16.8) 
@@ -82,11 +82,11 @@ Concepts
 	Class Components [DONE]
 	LifeCycle Hooks [DONE]
 
-	Styles 
+	Styles [DONE]
 		1. Inline 
 		2. Internal
 		3. External 
-	SASS 
+	SASS [DONE]
 	Styled Components 
 
 	ESLint and Prettier Setup

@@ -5,6 +5,7 @@ import MyProfile from "../../containers/MyProfile/MyProfile";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import LatestVideo from "./LatestVideo/LatestVideo";
 import Subscription from "./Subscription/Subscription";
+import StyledComponentsDemo from './StyledComponentsDemo/StyledComponentsDemo';
 
 const HomePage = () => {
   return (
@@ -90,7 +91,7 @@ const HomePage = () => {
 
       <hr/>
       <h2>Styled Components Demo</h2>
-      {/* <StyledComponentDemo /> */}
+      <StyledComponentsDemo />
 
     </div>
   );

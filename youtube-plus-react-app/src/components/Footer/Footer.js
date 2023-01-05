@@ -1,9 +1,10 @@
 // Functional Component with Anonymous Function
 import React from 'react';
+import PropTypes from "prop-types";
 import './Footer.css';
 import MenuList from '../MenuList/MenuList';
 
-const Footer = function () {
+const Footer = function( props) {
   const copyrightYear = 2023;
 
   // return JSX 
@@ -12,10 +13,17 @@ const Footer = function () {
       <hr />
       <MenuList />
       <p className="red-text green-text footer-purple-text">
-        Copyright {copyrightYear} | Arun
+        Copyright {copyrightYear} | {props.developerName}
       </p>
     </footer>
   );
 }
+// Specifies the default values for props:
+Footer.defaultProps = {
+  developerName: "Stranger",
+};
+Footer.propTypes = {
+  developerName: PropTypes.string
+};
 
 export default Footer;
