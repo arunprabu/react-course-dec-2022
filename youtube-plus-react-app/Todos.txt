@@ -7,3 +7,10 @@
 4. Styled Components  [Self-learn]
 5. PropTypes [Self-learn]
     Implement PropTypes in all possible components 
+6. disable the button after clicking 'add to watchlist'. label should become 'In Watchlist'
+7. learn about loading images from local project. 
+    Create a comp named 'Gallery' -- a fn comp -- display it in Home Page.
+    Keep 4 images and display all 4 in Gallery 
+        img src="<local project file url>"
+
+
