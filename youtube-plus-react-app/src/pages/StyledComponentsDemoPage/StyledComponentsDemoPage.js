@@ -26,7 +26,7 @@ const TomatoButton = styled(Button)`
   background-color: tomato;
 `;
 
-const StyledComponentsDemo = () => {
+const StyledComponentsDemoPage = () => {
 
   return (
     <Wrapper>
@@ -39,4 +39,4 @@ const StyledComponentsDemo = () => {
   );
 }
 
-export default StyledComponentsDemo
+export default StyledComponentsDemoPage;

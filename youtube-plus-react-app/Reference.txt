@@ -91,11 +91,11 @@ Concepts
 
 	ESLint and Prettier Setup
 
-	Render Props
-	HOC
-	Error Boundaries
-	StrictMode 
-	Fragments 
+	Render Props [DONE - Self-Learn]
+	HOC [DONE]
+	Error Boundaries [DONE]
+	StrictMode [DONE]
+	Fragments [DONE]
 	
 	Typechecking With PropTypes [DONE]
 
@@ -104,7 +104,7 @@ Concepts
 	Uncontrolled Components
 
 	REST API Calls 
-	Routing 
+	Routing [DONE]
 	Unit Testing 
 	Env Variables [Self-learn]
 	Build and Deployment 

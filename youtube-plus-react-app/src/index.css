@@ -7,3 +7,10 @@
 .red-text {
   color: red;
 }
+
+.hoc-style {
+  background-color: yellow;
+  border: solid 5px red;
+  padding: 20px;
+  margin-bottom: 10px;
+}

@@ -9,13 +9,16 @@ const Footer = function( props) {
 
   // return JSX 
   return (
-    <footer className="text-center">
-      <hr />
-      <MenuList />
-      <p className="red-text green-text footer-purple-text">
-        Copyright {copyrightYear} | {props.developerName}
-      </p>
-    </footer>
+    <>
+      <footer className="text-center">
+        <hr />
+        <MenuList />
+        <p className="red-text green-text footer-purple-text">
+          Copyright {copyrightYear} | {props.developerName}
+        </p>
+      </footer>
+      <p className='text-center'>Built with Passion in Jan 2023</p>
+    </>
   );
 }
 // Specifies the default values for props:

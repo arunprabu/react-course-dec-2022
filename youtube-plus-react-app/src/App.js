@@ -11,6 +11,8 @@ import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage/HomePage';
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
+import StyledComponentsDemoPage from "./pages/StyledComponentsDemoPage/StyledComponentsDemoPage";
+import HocDemoPage from "./pages/HocDemoPage/HocDemoPage";
 
 // comp defn 
 function App() {
@@ -25,6 +27,14 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
+            <Route
+              path="/styled-comp-demo"
+              element={<StyledComponentsDemoPage />}
+            />
+            <Route
+              path="/hoc-demo"
+              element={<HocDemoPage />}
+            />
           </Routes>
         </main>
         <Footer />
