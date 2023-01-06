@@ -13,4 +13,4 @@
     Keep 4 images and display all 4 in Gallery 
         img src="<local project file url>"
     Ref for UI: https://getbootstrap.com/docs/5.3/examples/album/
-
+8. 
