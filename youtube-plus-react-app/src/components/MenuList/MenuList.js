@@ -1,20 +1,27 @@
 // Functional Component with Arrow Function 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MenuList = () => {
-  return(
+  return (
     <ul className="navbar-nav me-auto mb-2 mb-md-0">
       <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="/">Home</a>
+        <Link to="/" className="nav-link active" aria-current="page">
+          Home
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/">About Us</a>
+        <Link to="/about" className="nav-link">
+          About Us
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/">Contact Us</a>
+        <Link to="/contact-us" className="nav-link">
+          Contact Us
+        </Link>
       </li>
     </ul>
-  )
+  );
 }
 
 export default MenuList;

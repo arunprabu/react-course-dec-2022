@@ -23,7 +23,7 @@ Naming Conventions
 ---
 	PascalCase
 	--------
-			* Folder of Components, File names and Component Names 
+			* Folder of Components, Component File names and Component Names 
 
 
 Components 
@@ -87,7 +87,7 @@ Concepts
 		2. Internal
 		3. External 
 	SASS [DONE]
-	Styled Components 
+	Styled Components [DONE]
 
 	ESLint and Prettier Setup
 
@@ -97,7 +97,7 @@ Concepts
 	StrictMode 
 	Fragments 
 	
-	Typechecking With PropTypes
+	Typechecking With PropTypes [DONE]
 
 	Hooks 
 	Forms
@@ -191,4 +191,72 @@ Data Binding
       JS => JSX 
 
   2. Two Way Binding 
-      JS <=> JSX 
+      JS <=> JSX
+
+
+       
+Single Page App (SPA)
+---
+  7 Characteristics 
+  ---
+    1. Pages should not reload/refresh [DONE]
+    2. URL should be changed [DONE]
+    3. Browser History should be maintained [DONE]
+    4. Retain Header and Footer [DONE]
+    5. The content in b/w header and footer should be updated [DONE]
+    6. Active menu should be set [TODO]
+    7. Page Title should be changed [TODO - use helmet package from npmjs ]
+
+
+Building SPA using React-router-dom 
+---
+	Step 1:
+	---
+		npm i react-router-dom
+
+	Step 2: 
+	--
+		Let's identify the URLs of our project 
+
+		Home 				localhost:3000/     
+		About us	 	localhost:3000/about     
+		Contact us	localhost:3000/contact-us 
+
+		Let's make the necessary changes in MenuList Comp 
+	
+	Step 3: 
+	----
+		Identify the matching components for the URLs
+
+		localhost:3000/    						-- HomePage Component 
+		localhost:3000/about    			-- AboutPage Component
+		localhost:3000/contact-us    	-- ContactUsPage Component
+
+		If any of the above components not created yet, create now 
+
+		src/
+			pagess/
+				AboutPage/
+					AboutPage.js 
+				ContactUsPage/
+					ContactUsPage.js 
+
+	Step 4: 
+	---
+		Configure the URLs in App.js 
+
+		Let's put the whole component under the control of BrowserRouter of react-router-dom 
+
+		and then complete the route configs 
+			 <Routes>
+				{/* URL configuration */}
+				<Route path="/" element={<HomePage />} />
+				<Route path="/about" element={<AboutPage />} />
+				<Route path="/contact-us" element={<ContactUsPage />} />
+			</Routes>
+
+	Step 5: 
+	---
+		Pages are still reloading/refreshing. Let's fix 
+
+		in MenuList.js replace all <a href=''> with <Link to=''> 
