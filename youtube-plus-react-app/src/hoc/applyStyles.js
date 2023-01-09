@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 // hoc is a function that takes in a comp as param and returns a New Comp
 const applyStyles = ( OriginalComponent) => { // receiving original comp as arg 
@@ -10,8 +10,8 @@ const applyStyles = ( OriginalComponent) => { // receiving original comp as arg
         <OriginalComponent {...props}/>
       </div>
     );
-  }
+  };
   return NewComponent;
-}
+};
 
 export default applyStyles;

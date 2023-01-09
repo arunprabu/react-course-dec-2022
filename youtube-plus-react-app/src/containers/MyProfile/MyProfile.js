@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class MyProfile extends Component {
   // JS <=> JSX
   state = {
-    profileName: "john",
+    profileName: 'john',
   };
 
   handleProfileNameChange = (event) => { // baked event object
@@ -12,7 +12,7 @@ class MyProfile extends Component {
     this.setState({
       profileName: event.target.value
     });
-  }
+  };
 
   render() {
     return (

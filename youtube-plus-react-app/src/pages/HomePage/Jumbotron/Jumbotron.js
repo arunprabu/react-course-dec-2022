@@ -8,7 +8,7 @@ const Jumbotron = () => {
         <button className="btn btn-danger btn-lg" type="button">Subscribe to YouTube Pro</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Jumbotron;

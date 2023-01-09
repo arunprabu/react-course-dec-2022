@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
@@ -37,6 +37,6 @@ const StyledComponentsDemoPage = () => {
       <a href="https://styled-components.com/docs/">Reference</a>
     </Wrapper>
   );
-}
+};
 
 export default StyledComponentsDemoPage;

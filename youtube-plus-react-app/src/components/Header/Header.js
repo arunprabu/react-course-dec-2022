@@ -23,7 +23,7 @@ function Header() {
         </div>
       </nav>
     </header>
-  )
+  );
 }
 
 export default Header;

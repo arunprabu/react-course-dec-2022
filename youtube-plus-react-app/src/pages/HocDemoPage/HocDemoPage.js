@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 import Bye from './Bye/Bye';
 import Hello from './Hello/Hello';
 import LastLogin from './LastLogin/LastLogin';
 import applyStyles from '../../hoc/applyStyles';
+import Calculator from './Calculator/Calculator';
+import ErrorBoundary from '../../containers/shared/ErrorBoundary/ErrorBoundary';
 
 const StyledHello = applyStyles(Hello);
 const StyledBye = applyStyles(Bye);
@@ -28,8 +30,11 @@ const HocDemoPage = () => {
 
       <hr />
       <h2>Error Boundary Demo</h2>
+      <ErrorBoundary>
+        <Calculator />
+      </ErrorBoundary>
     </>
   );
-}
+};
 
-export default HocDemoPage
+export default HocDemoPage;

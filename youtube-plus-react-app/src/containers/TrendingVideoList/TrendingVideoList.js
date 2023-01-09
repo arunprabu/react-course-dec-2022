@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from 'react';
 
 // class comp a.k.a containers/smart components/stateful comp 
 class TrendingVideoList extends Component{
@@ -30,7 +30,7 @@ class TrendingVideoList extends Component{
         publishedDate: '3 weeks ago'
       }
     ]
-  }
+  };
 
   // event handler method 
   handleSwitchResolution = () => { // within arrow fn -- this keyword will be available
@@ -42,7 +42,7 @@ class TrendingVideoList extends Component{
     });
     // whenever setState is called -- render() will be executed
     // setState will smartly merge the change with existing properties
-  }
+  };
   
   // must have render method 
   render() {
@@ -98,7 +98,7 @@ class TrendingVideoList extends Component{
         </div>
 
       </div>
-    )
+    );
   }
 }
 

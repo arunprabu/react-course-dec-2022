@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const RecommendedVideo = (props) => {
   // receiving all props incl id till isInWatchlist, index, handleAddToWatchlist
@@ -30,7 +30,7 @@ const RecommendedVideo = (props) => {
               onClick={props.handleAddToWatchlist.bind(this, props.index)}
             >
               {/* conditional rendering */}
-              {props.isInWatchlist ? "In Watchlist" : "Add to Watchlist"}
+              {props.isInWatchlist ? 'In Watchlist' : 'Add to Watchlist'}
             </button>
           </li>
         </ul>

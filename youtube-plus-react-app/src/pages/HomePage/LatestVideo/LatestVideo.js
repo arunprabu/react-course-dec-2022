@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const LatestVideo = ({ thumbnailUrl, title, channel, views, publishedDate, children } ) => { //receiving props
   // console.log(props);
@@ -25,7 +25,7 @@ const LatestVideo = ({ thumbnailUrl, title, channel, views, publishedDate, child
         <li className="list-group-item">{views} Views | {publishedDate}</li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default LatestVideo
+export default LatestVideo;

@@ -1,10 +1,10 @@
-import LifeCycleDemo from "../../containers/LifeCycleDemo/LifeCycleDemo";
-import RecommendedVideoList from "../../containers/RecommendedVideoList/RecommendedVideoList";
-import TrendingVideoList from "../../containers/TrendingVideoList/TrendingVideoList";
-import MyProfile from "../../containers/MyProfile/MyProfile";
-import Jumbotron from "./Jumbotron/Jumbotron";
-import LatestVideo from "./LatestVideo/LatestVideo";
-import Subscription from "./Subscription/Subscription";
+import LifeCycleDemo from '../../containers/LifeCycleDemo/LifeCycleDemo';
+import RecommendedVideoList from '../../containers/RecommendedVideoList/RecommendedVideoList';
+import TrendingVideoList from '../../containers/TrendingVideoList/TrendingVideoList';
+import MyProfile from '../../containers/MyProfile/MyProfile';
+import Jumbotron from './Jumbotron/Jumbotron';
+import LatestVideo from './LatestVideo/LatestVideo';
+import Subscription from './Subscription/Subscription';
 
 const HomePage = () => {
   return (
@@ -89,6 +89,6 @@ const HomePage = () => {
       <Subscription />
     </div>
   );
-}
+};
 
 export default HomePage;

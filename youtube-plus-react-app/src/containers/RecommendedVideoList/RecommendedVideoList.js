@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import RecommendedVideo from "../../pages/HomePage/RecommendedVideo/RecommendedVideo";
+import React, { Component } from 'react';
+import RecommendedVideo from '../../pages/HomePage/RecommendedVideo/RecommendedVideo';
 
 class RecommendedVideoList extends Component {
   constructor() {
@@ -8,49 +8,49 @@ class RecommendedVideoList extends Component {
     this.state = {
       videos: [
         {
-          id: "65467575",
-          title: "Ind Vs Bangladesh Cricket",
+          id: '65467575',
+          title: 'Ind Vs Bangladesh Cricket',
           description:
-            "Enjoy watching highlights of Ind Vs Bangladesh Cricket Dec 2023",
+            'Enjoy watching highlights of Ind Vs Bangladesh Cricket Dec 2023',
           thumbnailUrl:
-            "https://via.placeholder.com/250x200/008000/ffffff?text=IndVsBan",
-          channel: "Hotstar",
-          views: "6M",
-          publishedDate: "1 month ago",
+            'https://via.placeholder.com/250x200/008000/ffffff?text=IndVsBan',
+          channel: 'Hotstar',
+          views: '6M',
+          publishedDate: '1 month ago',
           isInWatchlist: false,
         },
         {
-          id: "658568688",
-          title: "FIFA World Cup 2023 Final",
-          description: "Full match of FIFA World Cup 2023 Final",
+          id: '658568688',
+          title: 'FIFA World Cup 2023 Final',
+          description: 'Full match of FIFA World Cup 2023 Final',
           thumbnailUrl:
-            "https://via.placeholder.com/250x200/ffff00/000000?text=Arg Vs France",
-          channel: "JioCinema",
-          views: "8M",
-          publishedDate: "3 weeks ago",
+            'https://via.placeholder.com/250x200/ffff00/000000?text=Arg Vs France',
+          channel: 'JioCinema',
+          views: '8M',
+          publishedDate: '3 weeks ago',
           isInWatchlist: false,
         },
         {
-          id: "79080789",
-          title: "Year End Vacation Special",
-          description: "Year End Vacation Special show only on ABC Channel",
+          id: '79080789',
+          title: 'Year End Vacation Special',
+          description: 'Year End Vacation Special show only on ABC Channel',
           thumbnailUrl:
-            "https://via.placeholder.com/250x200/ffff00/000000?text=Vacation2022",
-          channel: "ABC",
-          views: "5M",
-          publishedDate: "3 weeks ago",
+            'https://via.placeholder.com/250x200/ffff00/000000?text=Vacation2022',
+          channel: 'ABC',
+          views: '5M',
+          publishedDate: '3 weeks ago',
           isInWatchlist: true,
         },
         {
-          id: "96865867",
-          title: "Top 10 Goals of Messi",
+          id: '96865867',
+          title: 'Top 10 Goals of Messi',
           description:
-            "Enjoy watching Top 10 Goal of Messi only on XYZ Channel",
+            'Enjoy watching Top 10 Goal of Messi only on XYZ Channel',
           thumbnailUrl:
-            "https://via.placeholder.com/250x200/ffff00/000000?text=MessiGoals",
-          channel: "XYZ",
-          views: "10M",
-          publishedDate: "3 weeks ago",
+            'https://via.placeholder.com/250x200/ffff00/000000?text=MessiGoals',
+          channel: 'XYZ',
+          views: '10M',
+          publishedDate: '3 weeks ago',
           isInWatchlist: false,
         },
       ],

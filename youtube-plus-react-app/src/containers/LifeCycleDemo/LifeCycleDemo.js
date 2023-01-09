@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class LifeCycleDemo extends Component {
   constructor() {
     // optional to have constructor
     super();
-    console.log("======== 1. Inside constructor() ==========");
+    console.log('======== 1. Inside constructor() ==========');
 
     // ideal place for your initial comp-wide data
     this.state = {
       isLoading: true,
       isError: false,
-      featureName: "",
+      featureName: '',
     };
   }
 
@@ -19,14 +19,14 @@ class LifeCycleDemo extends Component {
     // this method will be exec'd ONLY ONCE after render
     // this method will be called when the component's UI comes into view
     // ideal place for you to send rest api calls
-    console.log("======== 3. Inside componentDidMount() ======");
+    console.log('======== 3. Inside componentDidMount() ======');
     // mocking the rest api call with timeout
     setTimeout(() => {
       // upon getting successful res
       this.setState({
         isLoading: false,
         isError: false,
-        featureName: "Demo of LifeCycle Hooks",
+        featureName: 'Demo of LifeCycle Hooks',
       });
 
       // upon getting error res
@@ -42,7 +42,7 @@ class LifeCycleDemo extends Component {
     // it must return either true or false
     // compare the prevState (this.state) and new state (nextState)
     // if changes found, then return true else return false
-    console.log("=========4. Inside shouldComponentUpdate() ======");
+    console.log('=========4. Inside shouldComponentUpdate() ======');
     // console.log(nextProps);
     // console.log(this.state); // prevState
     // console.log(nextState); // new state
@@ -52,7 +52,7 @@ class LifeCycleDemo extends Component {
   componentDidUpdate(prevProps, prevState) {
     // called immediately after the UPDATE in JSX (after the re-rendering)
     // will never be called after initial rendering
-    console.log("======== 6. Inside componentDidUpdate() ==========");
+    console.log('======== 6. Inside componentDidUpdate() ==========');
     console.log(prevProps);
     console.log(prevState);
     // you can get the prevProps and also prevState
@@ -60,7 +60,7 @@ class LifeCycleDemo extends Component {
 
   render() {
     // this method will be called immediately after constructor a.k.a initial rendering
-    console.log("======== 2 & 5 Inside render() ==========");
+    console.log('======== 2 & 5 Inside render() ==========');
 
     if (this.state.isLoading) {
       return <div className="spinner-border text-warning" role="status"></div>;
