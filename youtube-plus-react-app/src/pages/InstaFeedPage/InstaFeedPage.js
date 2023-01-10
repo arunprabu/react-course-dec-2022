@@ -16,7 +16,7 @@ class InstaFeedPage extends Component {
     axios.get('https://jsonplaceholder.typicode.com/photos?_limit=20')
       .then( (res) => {
         console.log(res.data);
-        // TODO: make use of the above data and display the UI  
+        // TODO: make use of the above data and display the UI
       })
       .catch( (err) => {
         console.log(err);

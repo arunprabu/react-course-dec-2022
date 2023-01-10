@@ -19,4 +19,5 @@
 12. Nested routing [Self-learn - will explain later]
 13. Learn more about Iterators and Generators In JS 
 14. Complete Instagram Photos page with REST API data 
-15. 
+15. Learn about Reconciliation [Self-learn] https://reactjs.org/docs/reconciliation.html
+16. 
