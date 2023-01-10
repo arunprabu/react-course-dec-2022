@@ -10,7 +10,7 @@ class LifeCycleDemo extends Component {
     this.state = {
       isLoading: true,
       isError: false,
-      featureName: '',
+      featureName: ''
     };
   }
 

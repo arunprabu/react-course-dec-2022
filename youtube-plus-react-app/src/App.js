@@ -14,6 +14,8 @@ import ContactUsPage from './pages/ContactUsPage/ContactUsPage';
 import StyledComponentsDemoPage from './pages/StyledComponentsDemoPage/StyledComponentsDemoPage';
 import HocDemoPage from './pages/HocDemoPage/HocDemoPage';
 import ErrorBoundary from './containers/shared/ErrorBoundary/ErrorBoundary';
+import InstaFeedPage from './pages/InstaFeedPage/InstaFeedPage';
+import HooksDemoPage from './pages/HooksDemoPage/HooksDemoPage';
 
 // comp defn
 function App() {
@@ -29,11 +31,10 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact-us" element={<ContactUsPage />} />
-              <Route
-                path="/styled-comp-demo"
-                element={<StyledComponentsDemoPage />}
-              />
+              <Route path="/styled-comp-demo" element={<StyledComponentsDemoPage />} />
               <Route path="/hoc-demo" element={<HocDemoPage />} />
+              <Route path="/insta-feed" element={<InstaFeedPage />} />
+              <Route path="/hooks-demo" element={<HooksDemoPage />} />
             </Routes>
           </ErrorBoundary>
         </main>

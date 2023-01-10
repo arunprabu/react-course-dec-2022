@@ -30,6 +30,16 @@ const MenuList = () => {
           Contact Us
         </Link>
       </li>
+      <li className="nav-item">
+        <Link to="/insta-feed" className="nav-link">
+          Instagram Photos
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/hooks-demo" className="nav-link">
+          Hooks Demo
+        </Link>
+      </li>
     </ul>
   );
 };

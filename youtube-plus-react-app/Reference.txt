@@ -260,3 +260,19 @@ Building SPA using React-router-dom
 		Pages are still reloading/refreshing. Let's fix 
 
 		in MenuList.js replace all <a href=''> with <Link to=''> 
+
+Hooks 
+--
+	* Hooks are available to Fn component 
+	* Hooks provide the missed features such as state, lifecycle hooks to fn comp 
+
+	Rules 
+	--
+		1. Only Call Hooks at the Top Level
+				Don’t call Hooks inside loops, conditions, or nested functions. 
+		2. Only Call Hooks from React Functional Components 
+		3. Call Hooks from custom Hooks which are functions 
+
+
+		
+
