@@ -35,7 +35,7 @@ const ProductsPage = () => {
 
   return (
     <div className="row">
-      <h1>Products</h1>
+      <h1>Products | useContext() with useReducer() Hook Demo</h1>
 
       {pdtList?.map((pdt) => {
         return (

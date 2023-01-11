@@ -21,3 +21,5 @@
 14. Complete Instagram Photos page with REST API data 
 15. Learn about Reconciliation [Self-learn] https://reactjs.org/docs/reconciliation.html
 16. Learn about useCallback() Hook [Self-learn]
+17. Try useMemo() -- [Explained already]
+

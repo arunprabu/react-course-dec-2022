@@ -34,6 +34,8 @@ const Todos = () => {
       <h3>Todos</h3>
       <div className="row">
         <div className="col-auto">
+          {/* Uncontrolled Component */}
+          {/* This is uncontrolled component, where form data is handled by the DOM itself. */}
           <input type="text" className="form-control" ref={todoInput} />
         </div>
         <div className="col-auto">
