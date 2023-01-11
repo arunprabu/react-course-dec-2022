@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class MyProfile extends Component {
   // JS <=> JSX
   state = {
-    profileName: 'john',
+    profileName: 'john'
   };
 
   handleProfileNameChange = (event) => { // baked event object

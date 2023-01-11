@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class ErrorBoundary extends Component {
   state = {
-    hasError: false,
+    hasError: false
   };
 
   // to catch error
@@ -41,5 +42,9 @@ class ErrorBoundary extends Component {
     }
   }
 }
+
+ErrorBoundary.propTypes = {
+  children: PropTypes.element
+};
 
 export default ErrorBoundary;

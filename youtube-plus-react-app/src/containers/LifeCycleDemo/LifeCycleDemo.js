@@ -26,7 +26,7 @@ class LifeCycleDemo extends Component {
       this.setState({
         isLoading: false,
         isError: false,
-        featureName: 'Demo of LifeCycle Hooks',
+        featureName: 'Demo of LifeCycle Hooks'
       });
 
       // upon getting error res

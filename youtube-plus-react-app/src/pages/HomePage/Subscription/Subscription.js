@@ -31,7 +31,7 @@ const Subscription = () => {
           color: '#fff',
           backgroundColor: 'red',
           borderRadius: '10px',
-          padding: '10px 20px',
+          padding: '10px 20px'
         }}
       >
         Your Subscription will end in two weeks

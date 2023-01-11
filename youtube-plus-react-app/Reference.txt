@@ -276,3 +276,14 @@ Hooks
 
 		
 
+
+Any to Any Comp Commn 
+--
+  Step 1: Create context using createContext() with any data or even null inside 
+
+  Step 2: Identify list of components you want to share the data with
+  
+  Step 3: Provide the data to the identified components
+
+  Step 4: Receive the data in identified components using useContext() hook
+          

@@ -1,8 +1,13 @@
 // Functional Component with Named Function
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from '../../contexts/CartContext';
 import MenuList from '../MenuList/MenuList';
 
 function Header() {
+
+  const products = useContext(CartContext);
+  console.log(products);
+
   // must return JSX
   return (
     <header>
@@ -23,6 +28,7 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <MenuList />
+            <button className='btn btn-danger'>Cart ({products.length})</button>
           </div>
         </div>
       </nav>

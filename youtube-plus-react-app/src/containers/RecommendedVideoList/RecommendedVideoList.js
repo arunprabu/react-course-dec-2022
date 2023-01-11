@@ -17,7 +17,7 @@ class RecommendedVideoList extends Component {
           channel: 'Hotstar',
           views: '6M',
           publishedDate: '1 month ago',
-          isInWatchlist: false,
+          isInWatchlist: false
         },
         {
           id: '658568688',
@@ -28,7 +28,7 @@ class RecommendedVideoList extends Component {
           channel: 'JioCinema',
           views: '8M',
           publishedDate: '3 weeks ago',
-          isInWatchlist: false,
+          isInWatchlist: false
         },
         {
           id: '79080789',
@@ -39,7 +39,7 @@ class RecommendedVideoList extends Component {
           channel: 'ABC',
           views: '5M',
           publishedDate: '3 weeks ago',
-          isInWatchlist: true,
+          isInWatchlist: true
         },
         {
           id: '96865867',
@@ -51,9 +51,9 @@ class RecommendedVideoList extends Component {
           channel: 'XYZ',
           views: '10M',
           publishedDate: '3 weeks ago',
-          isInWatchlist: false,
-        },
-      ],
+          isInWatchlist: false
+        }
+      ]
     };
   }
 
@@ -68,7 +68,7 @@ class RecommendedVideoList extends Component {
       !duplicateVideos[index].isInWatchlist;
     console.log(duplicateVideos);
     this.setState({
-      videos: duplicateVideos,
+      videos: duplicateVideos
     });
   };
 

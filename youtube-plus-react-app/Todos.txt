@@ -20,4 +20,4 @@
 13. Learn more about Iterators and Generators In JS 
 14. Complete Instagram Photos page with REST API data 
 15. Learn about Reconciliation [Self-learn] https://reactjs.org/docs/reconciliation.html
-16. 
+16. Learn about useCallback() Hook [Self-learn]
