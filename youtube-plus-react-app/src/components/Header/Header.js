@@ -5,8 +5,8 @@ import MenuList from '../MenuList/MenuList';
 
 function Header() {
 
-  const products = useContext(CartContext);
-  console.log(products);
+  const cartData = useContext(CartContext);
+  console.log(cartData.cartState);
 
   // must return JSX
   return (
@@ -28,7 +28,9 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <MenuList />
-            <button className='btn btn-danger'>Cart ({products.length})</button>
+            <button className="btn btn-danger">
+              Cart ({cartData?.cartState?.length > 0? cartData?.cartState?.length: 0})
+            </button>
           </div>
         </div>
       </nav>

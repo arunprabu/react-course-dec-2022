@@ -9,6 +9,13 @@ const Todos = () => {
   const [todoList, todoListDispatch] = useReducer(todoReducer);
   console.log(todoList);
 
+  useEffect(() => {
+    console.log('Initial Rendering Over!');
+    todoListDispatch({
+      type: 'LIST_TODOS'
+    });
+  });
+
   const handleAddTodo = () => {
     console.log(todoInput.current.value); // entered input
 

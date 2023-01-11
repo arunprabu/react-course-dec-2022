@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from '../../contexts/CartContext';
 
 const ProductsPage = () => {
+
+  const cartData  = useContext(CartContext);
+  console.log(cartData.cartDispatch);
+
   const pdtList = [
     {
       id: 1,
@@ -22,6 +27,10 @@ const ProductsPage = () => {
 
   const handleAddToCart = (pdt) => {
     console.log(pdt);
+    cartData.cartDispatch({
+      type: 'ADD_TO_CART',
+      payload: pdt
+    });
   };
 
   return (

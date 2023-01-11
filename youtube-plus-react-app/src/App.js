@@ -19,6 +19,8 @@ import HooksDemoPage from './pages/HooksDemoPage/HooksDemoPage';
 import ProductsPage from './pages/ProductsPage/ProductsPage';
 import { PageContext } from './contexts/PageContext';
 import { CartContext } from './contexts/CartContext';
+import { useReducer } from 'react';
+import cartReducer from './reducers/cartReducer';
 
 // comp defn
 function App() {
@@ -28,18 +30,18 @@ function App() {
     lastLogin: '11/Jan/2023'
   };
 
-  const products = [{
-    id: 2,
-    price: 54600,
-    productDescription: 'Samsung Galaxy S21 5G supports frequency bands GSM , CDMA , HSPA , EVDO , LTE , 5G. Official\n      announcement date is January 14 2021.',
-    productName: 'Samsung Galaxy S21 FE 5G',
-    quantity: 20 
-  }];
+  const [cartState, cartDispatch] = useReducer(cartReducer);
+  console.log(cartState);
+
+  const cartData = {
+    cartState: cartState,
+    cartDispatch: cartDispatch
+  };
 
   // must return JSX
   return (
     // Step 2 of CartContext
-    <CartContext.Provider value={products}>
+    <CartContext.Provider value={cartData}>
       <BrowserRouter>
         <div>
           <Header></Header>
