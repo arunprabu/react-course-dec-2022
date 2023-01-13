@@ -22,6 +22,7 @@
         "quotes": ["error", "single"],
         "comma-dangle": ["error", "never"],
         "comma-spacing": "error",
-        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }]
+        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+        "react/no-unescaped-entities": 0 
     }
 }

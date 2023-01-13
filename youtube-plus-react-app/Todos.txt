@@ -22,4 +22,5 @@
 15. Learn about Reconciliation [Self-learn] https://reactjs.org/docs/reconciliation.html
 16. Learn about useCallback() Hook [Self-learn]
 17. Try useMemo() -- [Explained already]
-
+18. Optimize MenuList with MenuItem component and avoid code duplicate 
+19. create routes/appRoutes.js  and export the routes and use in App.js 

@@ -287,3 +287,133 @@ Any to Any Comp Commn
 
   Step 4: Receive the data in identified components using useContext() hook
           
+=====
+
+Traditional Software Dev Approach 
+-----
+  Analysis 
+    Design (Mockup, Prototypes, UI)
+      Development ( Front End Arch, Back End Arch, DB Design )
+        Testing 
+          Deployment 
+            Maintanance 
+
+
+===
+Dev => QA => (50 bugs) => Dev => QA => (20 bugs) => Dev => QA => (5 bugs) => Dev => QA => (0 bug) => [QA Passed] => Deployment
+===
+
+
+Calc 
+===== 
+  Sources / References:
+  ====================
+    FRD 
+    HLD
+    LLD
+    Designs / Mockups / Prototypes 
+    Style Guides 
+
+  Development
+  ============
+    Test Cases 
+    ----------
+      Add Feature
+      ----
+        1. inputs should be of number 
+        2. output should always be of number 
+        3. if invalid inputs entered add button should be disabled 
+        4. Add button should have + icon 
+
+    function add(a, b){
+      if(typeof a === 'number' && typeof b ==='number'){
+        return a + b;
+      }
+    } 
+    add(10, 20); // 30
+    
+---  
+Test Automation
+---
+
+Modern Software Development Approaches 
+--
+  1. Test-Driven Developement (TDD)
+        * Write NEW CODE only if automated test fails 
+        
+        Dev writes test cases => (failure) => Dev writes Functionality => (Success)=>  [CODE COMPLETE]
+
+        Test Pattern: AAA (Arrange, Act, Assert)
+        Tools: JEST JS
+
+  2. Behaviour-Driven Developement (BDD)
+       * an agile s/w dev methodology 
+       * app is documented, designed around the behaviour the end user wants to experience 
+          when interacting with the app 
+
+        Dev writes test cases around the behaviour of the app => (failure )=> Dev writes Functionality => (Success) => [Code Complete]
+
+        Test Pattern: Given/When/Then 
+        Tools: Jasmine JS 
+
+
+Automation Testing 
+----
+  Levels 
+  0. Static Type Checking 
+      (Tools: TypeScript / FlowJS / PropTypes)
+  1. Unit Testing (will learn)
+      * Testing tiny, independent unit of our component 
+      * Testing the component in isolation (without connecting to REST API)
+      * Bug Reduction Density: 40-80% 
+
+      Tools: 
+      ----- 
+        JEST JS (Unit Testing Framework + Test Runner)
+        React Testing Library (RTL)
+        EnzymeJS (No official support for React V18)
+
+  2. Integration Testing 
+      * Testing the component by integrating multiple components together 
+      * Testing the component with service calls (REST API calls)
+
+      Tools: 
+      --- 
+        JEST JS (Unit Testing Framework + Test Runner)
+        React Testing Library (RTL)
+        EnzymeJS (No official support for React V18)
+
+  3. End to End (E2E) Testing 
+      * Testing the whole app as one entity 
+
+      Tools:
+      --
+        * Selenium
+        * CypressJS 
+        * Protractor 
+
+
+Testing Patterns
+======
+  1. AAA (Arrange, Act, Assert)
+  2. Given/When/Then
+  
+----
+
+Tools for Testing React App 
+=============
+  1. Jest JS (Unit Testing Framework + Test Runner)
+  2. React Testing Library (RTL) -- Testing Utility for DOM Querying 
+  3. EnzymeJS - Testing Utility for DOM Querying (similar to jQuery)
+      supports officially till React v16.
+      Also work unofficially till React v17.
+      No Support for React v18. 
+
+============
+  1. How to write test cases/specs?
+  2. Where to write the test cases/specs? 
+  3. How to test the app by tools?
+
+=====
+
+

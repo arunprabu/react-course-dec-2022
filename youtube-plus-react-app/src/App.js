@@ -46,6 +46,7 @@ function App() {
         <div>
           <Header></Header>
           <main className="container mt-5 pt-3">
+            <p>success!</p>
             <ErrorBoundary>
               {/* Step 2 of Context API */}
               <PageContext.Provider value={userStatus}>
