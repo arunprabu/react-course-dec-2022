@@ -4,23 +4,16 @@
   2. component definition 
   3. export 
 */
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { useReducer } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import HomePage from './pages/HomePage/HomePage';
-import AboutPage from './pages/AboutPage/AboutPage';
-import ContactUsPage from './pages/ContactUsPage/ContactUsPage';
-import StyledComponentsDemoPage from './pages/StyledComponentsDemoPage/StyledComponentsDemoPage';
-import HocDemoPage from './pages/HocDemoPage/HocDemoPage';
 import ErrorBoundary from './containers/shared/ErrorBoundary/ErrorBoundary';
-import InstaFeedPage from './pages/InstaFeedPage/InstaFeedPage';
-import HooksDemoPage from './pages/HooksDemoPage/HooksDemoPage';
-import ProductsPage from './pages/ProductsPage/ProductsPage';
 import { PageContext } from './contexts/PageContext';
 import { CartContext } from './contexts/CartContext';
-import { useReducer } from 'react';
 import cartReducer from './reducers/cartReducer';
+import { appRoutes} from './routes/appRoutes';
 
 // comp defn
 function App() {
@@ -46,21 +39,10 @@ function App() {
         <div>
           <Header></Header>
           <main className="container mt-5 pt-3">
-            <p>success!</p>
             <ErrorBoundary>
               {/* Step 2 of Context API */}
               <PageContext.Provider value={userStatus}>
-                <Routes>
-                  {/* URL configuration */}
-                  <Route path="/" element={<HomePage />} />
-                  <Route path="/about" element={<AboutPage />} />
-                  <Route path="/contact-us" element={<ContactUsPage />} />
-                  <Route path="/styled-comp-demo" element={<StyledComponentsDemoPage />} />
-                  <Route path="/hoc-demo" element={<HocDemoPage />} />
-                  <Route path="/insta-feed" element={<InstaFeedPage />} />
-                  <Route path="/hooks-demo" element={<HooksDemoPage />} />
-                  <Route path="/products" element={<ProductsPage />} />
-                </Routes>
+                {appRoutes}
               </PageContext.Provider>
             </ErrorBoundary>
           </main>

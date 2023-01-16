@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 const RecommendedVideo = (props) => {
   // receiving all props incl id till isInWatchlist, index, handleAddToWatchlist
@@ -37,6 +38,17 @@ const RecommendedVideo = (props) => {
       </div>
     </div>
   );
+};
+RecommendedVideo.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  thumbnailUrl: PropTypes.string,
+  channel: PropTypes.string,
+  views: PropTypes.string,
+  publishedDate: PropTypes.string,
+  index: PropTypes.number,
+  handleAddToWatchlist: PropTypes.func,
+  isInWatchlist: PropTypes.bool
 };
 
 export default RecommendedVideo;

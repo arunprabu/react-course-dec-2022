@@ -4,7 +4,7 @@ const AboutPage = (props) => {
   return (
     <>
       <div>About Page </div>
-      <div>{props.age()} </div>
+      {/* <div>{props.age()} </div> */}
     </>
   );
 };

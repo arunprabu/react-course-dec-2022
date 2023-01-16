@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 const Calculator = (props) => {
   return (
@@ -12,6 +13,9 @@ const Calculator = (props) => {
       {/* <button onClick={props.add}>Click Me</button> */}
     </div>
   );
+};
+Calculator.propTypes = {
+  add: PropTypes.func
 };
 
 export default Calculator;

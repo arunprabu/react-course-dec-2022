@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 const LatestVideo = ({ thumbnailUrl, title, channel, views, publishedDate, children } ) => { //receiving props
   // console.log(props);
@@ -26,6 +27,15 @@ const LatestVideo = ({ thumbnailUrl, title, channel, views, publishedDate, child
       </ul>
     </div>
   );
+};
+LatestVideo.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  thumbnailUrl: PropTypes.string,
+  channel: PropTypes.string,
+  views: PropTypes.string,
+  publishedDate: PropTypes.string,
+  children: PropTypes.element
 };
 
 export default LatestVideo;

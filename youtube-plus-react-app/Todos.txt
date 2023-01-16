@@ -24,3 +24,5 @@
 17. Try useMemo() -- [Explained already]
 18. Optimize MenuList with MenuItem component and avoid code duplicate 
 19. create routes/appRoutes.js  and export the routes and use in App.js 
+20. Work on Page Not Found when we hit the wrong urls 
+21. 

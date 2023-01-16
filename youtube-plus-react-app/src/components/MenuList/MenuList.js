@@ -45,6 +45,11 @@ const MenuList = () => {
           Products
         </Link>
       </li>
+      <li className="nav-item">
+        <Link to="/unit-testing-demo" className="nav-link">
+          Unit Testing Demo
+        </Link>
+      </li>
     </ul>
   );
 };
