@@ -25,4 +25,7 @@
 18. Optimize MenuList with MenuItem component and avoid code duplicate 
 19. create routes/appRoutes.js  and export the routes and use in App.js 
 20. Work on Page Not Found when we hit the wrong urls 
-21. 
+21. write unit test case for finding css class 
+22. write unit test for counter comp -- 'has properly working decrement button' 
+23. write unit test for counter comp -- 'has counter with max value of 10 upon increment 
+    and min value of 0 upon decrement' 

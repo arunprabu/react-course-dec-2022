@@ -416,4 +416,26 @@ Tools for Testing React App
 
 =====
 
+Unit Testing 
+--
+	1. Testing JSX Elements [DONE]
+	2. Testing Props [DONE]
+	3. Testing Inline CSS [DONE]
+	4. Testing CSS Class [DONE]
+	5. Testing Event & States [DONE]
+	6. Testing Event with Buttons [DONE]
+			* Counter with fireEvent [DONE]
+			* ThemeSwitching with userEvent [DONE]
+	7. Snapshot Testing 
+	9. Testing Forms 
+	10. Testing Context 
+	11. Testing Routing 
+	12. Testing REST Api Calls 
+			* with mocks 
+			* spies 
+			* negative test 
+	13. Setup/Teardown 
+			beforeEach, afterEach 
 
+
+	 
