@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const CompanyInfo = ( props ) => {
   const [countryName, setCountryName] = useState('USA');
-
+  
   return (
     <div>
       <h2>CompanyInfo | Testing Props, Styles, Placeholder Text, Events, States and Snapshot</h2>
