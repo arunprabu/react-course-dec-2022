@@ -1,4 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
+
 import CompanyInfo from './CompanyInfo';
 
 // test suite == group of related test specs
@@ -62,6 +64,14 @@ describe('CompanyInfo', () => {
   });
 
   // snapshot test
+  it('has right snapshot with all requirements completed', () => {
+    // to take snapshot we need react-test-renderer. // npm i react-test-renderer
+    // taking snapshot and also converting into JSON
+    // [RECOMMENDED]: Take snapshot with all possible props as well as props children 
+    const snapshotInJson = renderer.create(<CompanyInfo foundedYear="2006" />).toJSON();
+    // let assert with a matcher toMatchSnapshot()
+    expect(snapshotInJson).toMatchSnapshot();
+  });
 
   // mocks 
 });

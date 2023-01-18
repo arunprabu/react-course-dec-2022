@@ -428,14 +428,17 @@ Unit Testing
 			* ThemeSwitching with userEvent [DONE]
 	7. Snapshot Testing 
 	9. Testing Forms 
-	10. Testing Context 
-	11. Testing Routing 
-	12. Testing REST Api Calls 
+	10. Testing REST Api Calls 
 			* with mocks 
 			* spies 
 			* negative test 
+	11. Testing Routing [TODO]
+	12. Testing Context 
 	13. Setup/Teardown 
 			beforeEach, afterEach 
+
+---
+
 
 
 	 

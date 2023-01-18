@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompanyInfo has right snapshot with all requirements completed 1`] = `
+<div>
+  <h2>
+    CompanyInfo | Testing Props, Styles, Placeholder Text, Events, States and Snapshot
+  </h2>
+  <p>
+    Wed Jan 18 2023 12:37:00 GMT+0530 (India Standard Time)
+  </p>
+  <h3
+    data-testid="companyName"
+  >
+    Company Name: Cognizant
+  </h3>
+  <p
+    data-testid="foundedYear"
+    style={
+      Object {
+        "color": "rgb(0, 255, 0)",
+      }
+    }
+  >
+    Founded In: 
+    2006
+  </p>
+  <input
+    onChange={[Function]}
+    placeholder="Enter Your Country Name"
+    type="text"
+    value="USA"
+  />
+  <p
+    data-testid="visitCognizant"
+  >
+    Visit Cognizant 
+    USA
+     Website
+  </p>
+</div>
+`;
