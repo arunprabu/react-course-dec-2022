@@ -12,6 +12,7 @@ const ContactForm = () => {
       <form className="col-md-4">
         <div>
           <label htmlFor="nameInput">Enter Name:</label>
+          {/* on change is pending -- we will do it tomorrow */}
           <input type="text" id="nameInput" className="form-control" name="nameInput" />
         </div>
 
