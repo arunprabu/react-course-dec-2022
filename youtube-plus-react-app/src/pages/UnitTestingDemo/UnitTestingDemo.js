@@ -1,5 +1,6 @@
 import React from 'react';
 import CompanyInfo from './CompanyInfo/CompanyInfo';
+import ContactForm from './ContactForm/ContactForm';
 import Counter from './Counter/Counter';
 import ThemeSwitcher from './ThemeSwitcher/ThemeSwitcher';
 
@@ -15,6 +16,9 @@ const UnitTestingDemo = () => {
 
       <hr />
       <ThemeSwitcher />
+
+      <hr/>
+      <ContactForm />
     </div>
   );
 };
