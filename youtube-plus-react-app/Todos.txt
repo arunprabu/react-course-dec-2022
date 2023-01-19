@@ -29,3 +29,6 @@
 22. write unit test for counter comp -- 'has properly working decrement button' 
 23. write unit test for counter comp -- 'has counter with max value of 10 upon increment 
     and min value of 0 upon decrement' 
+24. In ContactForm.js - write test for 'has the submit button in enabled state when firstName is not empty '
+25. In ContactForm.js - write test for 'trigger the submit button click and check whether success msg is present' 
+26. In ContactForm.js --  send the form data to the REST API on click of submit 

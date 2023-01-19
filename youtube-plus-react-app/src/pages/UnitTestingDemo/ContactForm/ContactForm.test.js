@@ -33,4 +33,8 @@ describe('ContactForm', () => {
     const submitBtn = screen.getByRole('button');
     expect(submitBtn).toHaveAttribute('disabled');
   });
+
+  // TODO: has the submit button in enabled state when firstName is not empty 
+  // TODO: trigger the submit button click and check whether success msg is present
+
 });
