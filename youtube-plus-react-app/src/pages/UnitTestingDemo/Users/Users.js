@@ -15,7 +15,7 @@ const Users = () => {
     fetchApi('https://jsonplaceholder.typicode.com/users')
       .then((resInJSON) => {
         // capturing the converted JSON res
-        console.log(resInJSON);
+        // console.log(resInJSON);
         if(resInJSON.status != 404){
            setIsLoading(false);
            setIsError(false);
@@ -25,6 +25,12 @@ const Users = () => {
           setIsError(true);
           setUserList([]);
         }
+      })
+      .catch( (err) => {
+        console.log(err);
+        setIsLoading(false);
+        setIsError(true);
+        setUserList([]);
       });
   }, []);
 

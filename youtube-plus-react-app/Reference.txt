@@ -429,13 +429,14 @@ Unit Testing
 	7. Snapshot Testing [DONE]
 	9. Testing Forms [DONE]
 	10. Testing REST Api Calls 
-			* with mocks (fetch api)
-			* spies (fetch api)
-			* negative test 
+			* with mocks (fetch api) [DONE]
+			* spies (fetch api) [DONE]
+			* negative test  [DONE]
 	11. Testing Routing [TODO]
 	12. Testing Context 
-	13. Setup/Teardown 
+	13. Setup/Teardown [DONE]
 			beforeEach, afterEach 
+			beforeAll, afterAll 
 	14. Code Coverage 
 
 ---

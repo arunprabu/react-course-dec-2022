@@ -2,7 +2,7 @@ export const fetchApi = (url, method) => {
   return fetch(url)
     .then((res) => {
       // if successful
-      console.log(res);
+      // console.log(res);
       if(res.status == 200 || res.status == 201){
         return res.json();
       }else {
@@ -14,10 +14,10 @@ export const fetchApi = (url, method) => {
     })
     .catch((err) => {
       // if error occurs
-      console.log(err);
+      //console.log(err);
       return err;
     })
     .finally(() => {
-      console.log('It is over!');
+      //console.log('It is over!');
     });
 };
