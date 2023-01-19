@@ -427,10 +427,10 @@ Unit Testing
 			* Counter with fireEvent [DONE]
 			* ThemeSwitching with userEvent [DONE]
 	7. Snapshot Testing [DONE]
-	9. Testing Forms []
+	9. Testing Forms [DONE]
 	10. Testing REST Api Calls 
-			* with mocks 
-			* spies 
+			* with mocks (fetch api)
+			* spies (fetch api)
 			* negative test 
 	11. Testing Routing [TODO]
 	12. Testing Context 
@@ -439,6 +439,9 @@ Unit Testing
 	14. Code Coverage 
 
 ---
+
+Code splitting & Lazy loading
+Build and Deployment 
 
 
 	 

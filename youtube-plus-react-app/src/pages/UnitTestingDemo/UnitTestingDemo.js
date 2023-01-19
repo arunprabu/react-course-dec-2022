@@ -3,6 +3,7 @@ import CompanyInfo from './CompanyInfo/CompanyInfo';
 import ContactForm from './ContactForm/ContactForm';
 import Counter from './Counter/Counter';
 import ThemeSwitcher from './ThemeSwitcher/ThemeSwitcher';
+import Users from './Users/Users';
 
 const UnitTestingDemo = () => {
   return (
@@ -13,12 +14,12 @@ const UnitTestingDemo = () => {
       <CompanyInfo foundedYear="1998" />
       <hr />
       <Counter />
-
       <hr />
       <ThemeSwitcher />
-
-      <hr/>
+      <hr />
       <ContactForm />
+      <hr />
+      <Users/>
     </div>
   );
 };

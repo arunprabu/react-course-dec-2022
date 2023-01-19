@@ -18,11 +18,12 @@ describe('ContactForm', () => {
     expect(phoneInput).toHaveAttribute('type', 'number');
   });
 
+  // negative spec
   it('has the submit button in disabled state when first name is empty', () => {
     render(<ContactForm />);
     const nameInput = screen.getByLabelText('Enter Name:');
     const mockEventObj = {
-      // praparing the mock event obj with target value being China
+      // praparing the mock event obj with target value being empty
       target: {
         value: ''
       }

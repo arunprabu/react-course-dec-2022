@@ -61,7 +61,6 @@ const ContactForm = () => {
           <button type="submit" className="btn btn-primary" disabled={formState.firstName === ''}>
             Submit
           </button>
-
           {isSaved? <div className="alert alert-success">Saved Successfully</div>: ''}
         </div>
       </form>
