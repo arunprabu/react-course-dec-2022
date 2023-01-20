@@ -441,8 +441,41 @@ Unit Testing
 
 ---
 
-Code splitting & Lazy loading
 Build and Deployment 
+--
+  Build Checklist
+  ---
+    1. Ensure you have 0 linting errors 
+    2. Remove console.logs
+    3. Have Error Boundary 
+    4. Check for errors in console 
+    5. click on all menus and check whether runtime errors, console errors occur 
 
+  Now, LEt's take a build 
+    npm run build 
 
-	 
+===
+====
+Capstone Submission Checklist 
+---
+  1. 0 linting errors 
+  2. properly formatted code 
+  3. code comments 
+  4. proper naming, coding conventions 
+  5. keep minimal console.logs 
+  6. 0 console errors 
+  7. 0 console warnings 
+  8. 85% code coverage 
+  9. functionalities fully working 
+  10. lazy loading implemented (for at least 1 page) 
+  ---
+
+  How to take a build and submit the project 
+    1. Generate code coverage report 
+        npm run test -- --coverage --watchAll
+    2. Generate build 
+        npm run build 
+    3. Zip your entire project without node_modules 
+    4. Upload in the given location 
+    5. Send a mail to Preethi 
+
