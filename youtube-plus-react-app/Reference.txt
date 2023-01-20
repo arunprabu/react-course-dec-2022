@@ -433,7 +433,7 @@ Unit Testing
 			* spies (fetch api) [DONE]
 			* negative test  [DONE]
 	11. Testing Routing [TODO]
-	12. Testing Context 
+	12. Testing Context [DONE]
 	13. Setup/Teardown [DONE]
 			beforeEach, afterEach 
 			beforeAll, afterAll 
