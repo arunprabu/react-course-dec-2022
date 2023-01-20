@@ -470,7 +470,7 @@ Capstone Submission Checklist
   10. lazy loading implemented (for at least 1 page) 
   ---
 
-  How to take a build and submit the project 
+  How to take a build and submit the project?
     1. Generate code coverage report 
         npm run test -- --coverage --watchAll
     2. Generate build 
