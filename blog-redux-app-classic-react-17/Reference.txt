@@ -1,0 +1,60 @@
+Flux 
+--
+  * Architecture 
+  * Design Pattern 
+  
+
+Redux 
+--
+  * Architecture 
+  * Design Pattern 
+  * Modern, Easier
+
+---
+
+Packages we need to Develop Project using Redux 
+---
+1. Classic Redux App Development (till 11 AM) 
+  Manual Integrations
+    1. redux 
+    2. react-redux 
+    3. redux-thunk/redux-saga 
+    4. immer.js
+    5. redux-logger 
+    6. redux-dev-tools 
+
+    Middleware: Redux-Saga (prereq: generator fn in es2015)
+
+2. Redux-Toolkit based App Development (after 11.30 AM)
+    Default Integrations
+      1. redux 
+      2. react-redux 
+      3. redux-thunk/redux-saga 
+      4. immer.js
+      5. redux-logger 
+      6. redux-dev-tools 
+
+      Middleware: Redux-thunk 
+
+
+flow 
+--
+  1. from comp dispatch an action type = FETCH_REQUEST
+    2. from reducer, set itLoading to true ( connect with REST API in the meantime)
+      3. REST API will give either success or error
+        3.1 if success, dispatch FETCH_SUCCESS 
+            => from reducer, set itLoading to false, and update the state with data from rest api 
+        3.2 if success, dispatch FETCH_ERROR
+            => from reducer, set itLoading to false, and update the state with error from rest api 
+
+
+Async Calls / Side effects in Redux 
+--
+  Middleware is Needed
+  ---------------
+    1. redux-thunk 
+    2. redux-saga (preferred for multiple / subsequent network calls)
+  
+------
+  
+
