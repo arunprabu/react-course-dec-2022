@@ -20,6 +20,16 @@ export const fetchUsersAsync = createAsyncThunk(
   }
 );
 
+export const addUserAsync = createAsyncThunk("users/addUser",
+ async (formData) => {
+  const response = await axios.post(
+    "https://jsonplaceholder.typicode.com/users",
+    formData
+  );
+  console.log(response.data);
+  return response.data;
+});
+
 export const usersSlice = createSlice({
   name: "users", // A name, used in action types
   initialState, // The initial state for the reducer
@@ -32,7 +42,7 @@ export const usersSlice = createSlice({
     builder
       .addCase(fetchUsersAsync.pending, (state) => {
         console.log("pending");
-        state.status = 'loading';
+        state.status = "loading";
         state.isLoading = true;
         state.isError = false;
       })
@@ -46,6 +56,22 @@ export const usersSlice = createSlice({
       })
       .addCase(fetchUsersAsync.rejected, (state, action) => {
         console.log("rejected");
+        state.status = "Some error occurred! Try again later!";
+        state.isLoading = false;
+        state.isError = true;
+      })
+      .addCase(addUserAsync.pending, (state) => {
+        state.status = "loading";
+        state.isLoading = true;
+        state.isError = false;
+      })
+      .addCase(addUserAsync.fulfilled, (state, action) => {
+        state.status = "idle";
+        state.isLoading = false;
+        state.isError = false;
+        state.userList = [...state.userList, action.payload];
+      })
+      .addCase(addUserAsync.rejected, (state) => {
         state.status = "Some error occurred! Try again later!";
         state.isLoading = false;
         state.isError = true;
